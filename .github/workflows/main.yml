@@ -27,9 +27,10 @@ jobs:
     - name: FTP-Deploy-Action
       uses: SamKirkland/FTP-Deploy-Action@3.0.0
       with:
-        ftp-server: sftp://covid19.jordyu.nl/opt/lampp/htdocs/jordyu/covid19
+        ftp-server: sftp://covid19.jordyu.nl
         ftp-username: ${{ secrets.USERNAME }}
         ftp-password: ${{ secrets.PASSWORD }}
         local-dir:  public/
+        git-ftp-args: --insecure # if your certificate is setup correctly this can be removed:  
 
 
