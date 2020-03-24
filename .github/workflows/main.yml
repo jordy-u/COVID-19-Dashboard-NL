@@ -29,12 +29,5 @@ jobs:
     - name: Show files
       run: ls -R
 
-    - uses: oncletom/rsync-deployments@master
-      with:
-        USER_AND_HOST: covid19@jordyu.nl
-        DEST: /opt/lampp/htdocs/jordyu/covid19
-        SRC: public/
-        RSYNC_OPTIONS: -avzr --delete -vr --exclude '.git*'
-      env:
-        DEPLOY_KEY: ${{ secrets.DEPLOY_KEY }}
+    - run: rsync -e ssh -vr --delete-after --filter=":- .gitignore" --filter "- .git/" ./ covid19@covid19.jordyu.nl:/opt/lampp/htdocs/jordyu/covid19
 
