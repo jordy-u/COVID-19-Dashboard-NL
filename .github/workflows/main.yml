@@ -31,8 +31,8 @@ jobs:
 
     - uses: oncletom/rsync-deployments@master
       with:
-        USER_AND_HOST: ${{ secrets.USER_AND_HOST }}
-        DEST: ${{ secrets.SERVER_PATH }}
+        USER_AND_HOST: covid19@jordyu.nl
+        DEST: /opt/lampp/htdocs/jordyu/covid19
         SRC: public/
         RSYNC_OPTIONS: -avzr --delete -vr --exclude '.git*'
       env:
