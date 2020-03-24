@@ -38,7 +38,7 @@ jobs:
         flags: '-avzr --delete'
         options: ''
         ssh_options: ''
-        src: 'master/'
+        src: 'public/'
         dest: '/opt/lampp/htdocs/jordyu/covid19'
 
     - name: Display status from deploy
