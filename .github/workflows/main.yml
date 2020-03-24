@@ -26,9 +26,17 @@ jobs:
     - name: Run a one-line script
       run: echo Deploying to covid19.jordyu.nl
         
-    - name: Deploy to website 
-      uses: contention/rsync-deployments@v1.0.0
-      env: 
-        DEPLOY_KEY: ${{secrets.DEPLOY_KEY}} 
-      with: 
-        args: "-avzr --delete covid19@jordyu.nl:/opt/lampp/htdocs/jordyu/covid19"
+    - name: Deploy to server
+      id: deploy
+      uses: Pendect/action-rsyncer@v1.1.0
+      env:
+        DEPLOY_KEY: ${{secrets.DEPLOY_KEY}}
+      with:
+        flags: '-avzr --delete'
+        options: ''
+        ssh_options: ''
+        src: 'public/'
+        dest: '/opt/lampp/htdocs/jordyu/covid19'
+
+    - name: Display status from deploy
+      run: echo "${{ steps.deploy.outputs.status }}"
