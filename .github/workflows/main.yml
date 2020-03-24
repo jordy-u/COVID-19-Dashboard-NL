@@ -28,17 +28,13 @@ jobs:
     
     - name: Show files
       run: ls -R
-      
-        
-  deploy:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: contention/rsync-deployments@master
-        with:
-          USER_AND_HOST: ${{ secrets.USER_AND_HOST }}
-          DEST: ${{ secrets.SERVER_PATH }}
-          SRC: public/
-          RSYNC_OPTIONS: -avzr --delete -vr --exclude '.git*'
-        env:
-          DEPLOY_KEY: ${{ secrets.DEPLOY_KEY }}
+
+    - uses: oncletom/rsync-deployments@master
+      with:
+        USER_AND_HOST: ${{ secrets.USER_AND_HOST }}
+        DEST: ${{ secrets.SERVER_PATH }}
+        SRC: public/
+        RSYNC_OPTIONS: -avzr --delete -vr --exclude '.git*'
+      env:
+        DEPLOY_KEY: ${{ secrets.DEPLOY_KEY }}
 
