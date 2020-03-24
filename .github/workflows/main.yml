@@ -25,6 +25,9 @@ jobs:
     # Runs a single command using the runners shell
     - name: Run a one-line script
       run: echo Deploying to covid19.jordyu.nl
+    
+    - name: Show files
+      run: ls -R
         
     - name: Deploy to server
       id: deploy
