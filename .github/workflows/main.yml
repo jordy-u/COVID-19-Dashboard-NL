@@ -28,18 +28,15 @@ jobs:
     
     - name: Show files
       run: ls -R
-        
-    - name: Deploy to server
-      id: deploy
-      uses: Pendect/action-rsyncer@v1.1.0
+      
+    - name: deploy to server
+      uses: AEnterprise/rsync-deploy@v1.0
       env:
-        DEPLOY_KEY: ${{secrets.DEPLOY_KEY}}
-      with:
-        flags: '-avzr --delete'
-        options: '-vr'
-        ssh_options: ''
-        src: 'public/'
-        dest: 'covid19.jordyu.nl:/opt/lampp/htdocs/jordyu/covid19/'
+        DEPLOY_KEY: ${{ secrets.DEPLOY_KEY }}
+        ARGS: "-e -c -r --delete"
+        SERVER_PORT: ${{ secrets.SERVER_PORT }}
+        FOLDER: "./"
+        SERVER_IP: ${{ secrets.SERVER_IP }}
+        USERNAME: ${{ secrets.USERNAME }}
+        SERVER_DESTINATION: ${{ secrets.SERVER_DESTINATION }}
 
-    - name: Display status from deploy
-      run: echo "${{ steps.deploy.outputs.status }}"
