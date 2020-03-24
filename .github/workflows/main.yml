@@ -39,7 +39,7 @@ jobs:
         options: '-vr'
         ssh_options: ''
         src: 'public/'
-        dest: '/opt/lampp/htdocs/jordyu/covid19/'
+        dest: 'covid19.jordyu.nl:/opt/lampp/htdocs/jordyu/covid19/'
 
     - name: Display status from deploy
       run: echo "${{ steps.deploy.outputs.status }}"
