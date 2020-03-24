@@ -31,6 +31,6 @@ jobs:
         ftp-username: ${{ secrets.USERNAME }}
         ftp-password: ${{ secrets.PASSWORD }}
         local-dir:  public/
-        git-ftp-args: --insecure # if your certificate is setup correctly this can be removed:  
+        git-ftp-args: --insecure --remote-root /opt/lampp/htdocs/jordyu/covid19/ # if your certificate is setup correctly this can be removed:  
 
 
