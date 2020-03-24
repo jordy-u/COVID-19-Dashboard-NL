@@ -36,7 +36,7 @@ jobs:
         DEPLOY_KEY: ${{secrets.DEPLOY_KEY}}
       with:
         flags: '-avzr --delete'
-        options: ''
+        options: '-vr'
         ssh_options: ''
         src: 'public/'
         dest: '/opt/lampp/htdocs/jordyu/covid19/'
