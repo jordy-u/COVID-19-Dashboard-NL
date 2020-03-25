@@ -1,0 +1,34 @@
+# This is a basic workflow to help you get started with Actions
+
+name: Publish TEST Website before merging
+
+# Controls when the action will run. Triggers the workflow on push or pull request
+# events but only for the master branch
+on:
+  pull_request:
+    branches: [ master ]
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  FTP-Deploy-Action:
+    # The type of runner that the job will run on
+    name: FTP-Deploy-Action
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+    # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+    - uses: actions/checkout@v2
+
+    # Runs a single command using the runners shell
+    - name: FTP-Deploy-Action
+      uses: SamKirkland/FTP-Deploy-Action@3.0.0
+      with:
+        ftp-server: sftp://covid19.jordyu.nl
+        ftp-username: ${{ secrets.USERNAME }}
+        ftp-password: ${{ secrets.PASSWORD }}
+        local-dir:  public/
+        git-ftp-args: --insecure --remote-root /opt/lampp/htdocs/jordyu/covid19-staging/ # if your certificate is setup correctly this can be removed:  
+
+
