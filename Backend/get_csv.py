@@ -17,6 +17,7 @@ def plot_and_save(datafile,save_location="../images/",Save_name='Default',save_f
     plt.gcf().autofmt_xdate()
 
     plt.savefig("{}{}.{}".format(save_location,Save_name,save_format))
+    plt.suptitle("Corona gevallen voor gemeente {}".format(datafile.iloc[0][1]), fontsize=16)
     print("file created")
 
 def load_pandas(file_loc='-1'):
