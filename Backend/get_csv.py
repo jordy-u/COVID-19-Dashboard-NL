@@ -7,7 +7,6 @@ Created on Wed Mar 25 15:24:33 2020
 
 import pandas as pd
 import matplotlib.pyplot as plt
-import matplotlib.dates as mdatas
 
 def plot_and_save(datafile,save_location="../images/",Save_name='Default',save_format="SVG"):
     date = datafile['Datum']
