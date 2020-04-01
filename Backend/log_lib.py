@@ -17,3 +17,5 @@ class event:
         print("Something is wrong with your user name or password")
     def invalid_database():
         print("Database does not exist")
+    def new_entry(Datum,Gemeentecode):
+        print("Creating new entry on date {}, with code {}".format(Datum, Gemeentecode))

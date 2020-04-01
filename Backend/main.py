@@ -17,6 +17,11 @@ from mysql.connector import errorcode
 
 data = load_pandas(url_path())
 query = ("SELECT Datum, Gemeentecode, Aantal FROM corona_in_nl WHERE Datum =%s AND Gemeentecode =%s")
+insert_new_data_query = ("INSERT INTO `corona_in_nl` (`Datum`, `Gemeentenaam`, `Gemeentecode`, `Provincienaam`, `Aantal`) VALUES (%s, %s, %s, %s, %s)")
+
+existing_entries = 0
+new_entries = 0
+data_compaired = 0
 
 try:
     cnx=connect_to_database()
@@ -30,10 +35,21 @@ except mysql.connector.Error as err:
     print(err)
 else:
     cursor = cnx.cursor()
+    inser_cursor = cnx.cursor()
     start_time = time.time()
     
     for index, row in data.iterrows():
+        data_compaired+=1
         cursor.execute(query, (row['Datum'],row['Gemeentecode']))
-        for (Datum, Gemeentecode, Aantal) in cursor:
-           print("bla")
-    print('operation took {} seconds to complete'.format(time.time()-start_time))
+        if cursor.fetchone() != None:
+           existing_entries+=1
+        else:
+            new_entries+=1
+            if row['Gemeentecode'] != -1:
+                inser_cursor.execute(insert_new_data_query,(row['Datum'],row['Gemeentenaam'],row['Gemeentecode'],row['Provincienaam'],row['Aantal']))
+            else:
+                inser_cursor.execute(insert_new_data_query,(row['Datum'],'NULL',row['Gemeentecode'],'NULL',row['Aantal']))
+            event.new_entry(row['Datum'],row['Gemeentecode'])
+            cnx.commit()
+    print('operation took {} seconds to complete. Searched trough {} entries, Found {} matching entries and created {} new entries'.format(time.time()-start_time,data_compaired,existing_entries,new_entries))
+    cnx.close()
