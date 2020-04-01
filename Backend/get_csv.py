@@ -21,19 +21,13 @@ def plot_and_save(datafile,save_location="../images/",Save_name='Default',save_f
 
 def load_pandas(file_loc='-1'):
     if file_loc != -1:
-        try:
-            data = pd.read_csv("{}.csv".format(path_to_file))
-        except pd.errors.FileNotFoundError:
-            print("file read error")
-            pass
-        else:
-            print("file found")
-            return(data)
+        data = pd.read_csv("{}.csv".format(path_to_file))
+        return(data)
     else:
         print("no file path fiven")
 
 print("reading file")
-path_to_file="../data/rivm_corona_in_nl"
+path_to_file="https://raw.githubusercontent.com/J535D165/CoronaWatchNL/master/data/rivm_corona_in_nl"
 path_to_save="../images/daily_corona_cases"
 
 data = load_pandas(path_to_file)
