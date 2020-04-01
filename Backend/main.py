@@ -16,6 +16,7 @@ import mysql.connector
 from mysql.connector import errorcode
 
 data = load_pandas(url_path())
+query = ("SELECT Datum, Gemeentecode, Aantal FROM corona_in_nl WHERE Datum =%s AND Gemeentecode =%s")
 
 try:
     cnx=connect_to_database()
@@ -28,7 +29,10 @@ except mysql.connector.Error as err:
   else:
     print(err)
 else:
+    cursor = cnx.cursor()
     start_time = time.time()
     for index, row in data.iterrows():
-        print("Nieuw corona geval op {} geconstateerd in gemeente {}. Aantral gevallen = {}".format(row['Datum'], row['Gemeentenaam'], row['Aantal']))
-        print('operation took {} seconds to complete'.format(time.time()-start_time))
+        cursor.execute(query, (row['Datum'],row['Gemeentecode']))
+        for (Datum, Gemeentecode) in cursor:
+            print("bla")
+    print('operation took {} seconds to complete'.format(time.time()-start_time))
