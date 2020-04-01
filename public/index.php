@@ -18,11 +18,11 @@
   <p>Kijk terug in de tijd en zie hoe het coronavirus zich heeft versprijd in Nedeland.</p> 
 </div>
 
-<div class="container-fluid">
+<div class="container">
 	<!-- map Netherlands -->
 	<div class="row">
 		<div class="col-lg-8">
-			<img src="images/placeholders/placeholder_map_netherlands.png" class="img-fluid">
+			<?php include('NL_map_content.php'); ?>
 			<br>
 			<img src="images/placeholders/placeholder_city_stats.png" class="img-fluid">
 		</div>
