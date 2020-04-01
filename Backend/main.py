@@ -50,6 +50,6 @@ else:
             else:
                 inser_cursor.execute(insert_new_data_query,(row['Datum'],'NULL',row['Gemeentecode'],'NULL',row['Aantal']))
             event.new_entry(row['Datum'],row['Gemeentecode'])
-            cnx.commit()
+    cnx.commit()
     print('operation took {} seconds to complete. Searched trough {} entries, Found {} matching entries and created {} new entries'.format(time.time()-start_time,data_compaired,existing_entries,new_entries))
     cnx.close()
