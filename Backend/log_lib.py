@@ -13,3 +13,7 @@ class event:
     
     def file_found():
         print("file found")
+    def invalid_login():
+        print("Something is wrong with your user name or password")
+    def invalid_database():
+        print("Database does not exist")
