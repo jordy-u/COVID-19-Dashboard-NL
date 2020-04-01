@@ -31,8 +31,9 @@ except mysql.connector.Error as err:
 else:
     cursor = cnx.cursor()
     start_time = time.time()
+    
     for index, row in data.iterrows():
         cursor.execute(query, (row['Datum'],row['Gemeentecode']))
-        for (Datum, Gemeentecode) in cursor:
-            print("bla")
+        for (Datum, Gemeentecode, Aantal) in cursor:
+           print("bla")
     print('operation took {} seconds to complete'.format(time.time()-start_time))

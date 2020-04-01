@@ -28,8 +28,7 @@ else:
     
     query = ("SELECT * FROM test")
     query2 = ("SELECT COLUMN_NAME FROM information_schema.columns WHERE table_schema='[database]' AND table_name='[table_name]'")
-    cursor.execute(query)
-    
+    print(cursor)
     for (ID,time,text) in cursor:
         print("Data gevonden, tegevoegt op {}, met ID {}, Data is alsvolgt {}".format(time,ID,text))
     
