@@ -10,14 +10,14 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from setup import *
 from log_lib import *
-from config_test import *
+from config import *
 import time
 import mysql.connector
 from mysql.connector import errorcode
 
 data = load_pandas(url_path())
-query = ("SELECT Datum, Gemeentecode, Aantal FROM corona_in_nl WHERE Datum =%s AND Gemeentecode =%s")
-insert_new_data_query = ("INSERT INTO `corona_in_nl` (`Datum`, `Gemeentenaam`, `Gemeentecode`, `Provincienaam`, `Aantal`) VALUES (%s, %s, %s, %s, %s)")
+query = ("SELECT Datum, Gemeentecode, Aantal FROM Corona_per_gemeente WHERE Datum =%s AND Gemeentecode =%s")
+insert_new_data_query = ("INSERT INTO `Corona_per_gemeente` (`Datum`, `Gemeentenaam`, `Gemeentecode`, `Provincienaam`, `Aantal`) VALUES (%s, %s, %s, %s, %s)")
 
 existing_entries = 0
 new_entries = 0
