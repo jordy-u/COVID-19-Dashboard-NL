@@ -10,7 +10,6 @@ class event:
     
     def file_not_found():
         print("file read error")
-    
     def file_found():
         print("file found")
     def invalid_login():

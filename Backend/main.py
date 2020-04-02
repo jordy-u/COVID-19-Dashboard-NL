@@ -14,6 +14,9 @@ from config import *
 import time
 import mysql.connector
 from mysql.connector import errorcode
+import logging
+logging.basicConfig(filename='example.log',level=logging.DEBUG)
+logging.info('Start program')
 
 data = load_pandas(url_path())
 query = ("SELECT Datum, Gemeentecode, Aantal FROM Corona_per_gemeente WHERE Datum =%s AND Gemeentecode =%s")
@@ -28,11 +31,11 @@ try:
     
 except mysql.connector.Error as err:
   if err.errno == errorcode.ER_ACCESS_DENIED_ERROR:
-    event.invalid_login()
+    logging.warning("invalid_login")
   elif err.errno == errorcode.ER_BAD_DB_ERROR:
-    event.invalid_database()
+    logging.warning("invalid database")
   else:
-    print(err)
+    logging.warning(err)
 else:
     cursor = cnx.cursor()
     inser_cursor = cnx.cursor()
@@ -45,11 +48,12 @@ else:
            existing_entries+=1
         else:
             new_entries+=1
+            logging.info('New entry found on timestamp {}'.format(time.time()))
             if row['Gemeentecode'] != -1:
                 inser_cursor.execute(insert_new_data_query,(row['Datum'],row['Gemeentenaam'],row['Gemeentecode'],row['Provincienaam'],row['Aantal']))
             else:
                 inser_cursor.execute(insert_new_data_query,(row['Datum'],'NULL',row['Gemeentecode'],'NULL',row['Aantal']))
             event.new_entry(row['Datum'],row['Gemeentecode'])
     cnx.commit()
-    print('operation took {} seconds to complete. Searched trough {} entries, Found {} matching entries and created {} new entries'.format(time.time()-start_time,data_compaired,existing_entries,new_entries))
+    logging.info('operation took {} seconds to complete. Searched trough {} entries, Found {} matching entries and created {} new entries'.format(time.time()-start_time,data_compaired,existing_entries,new_entries))
     cnx.close()

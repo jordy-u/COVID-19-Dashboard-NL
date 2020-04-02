@@ -7,6 +7,8 @@ Created on Wed Mar 25 15:24:33 2020
 
 import pandas as pd
 import matplotlib.pyplot as plt
+import logging
+logging.basicConfig(filename='example.log',level=logging.DEBUG)
 
 def plot_and_save(datafile,save_location="../images/",Save_name='Default',save_format="SVG"):
     date = datafile['Datum']
@@ -17,14 +19,14 @@ def plot_and_save(datafile,save_location="../images/",Save_name='Default',save_f
 
     plt.savefig("{}{}.{}".format(save_location,Save_name,save_format))
     plt.suptitle("Corona gevallen voor gemeente {}".format(datafile.iloc[0][1]), fontsize=16)
-    print("file created")
+    logging.info("file created")
 
 def load_pandas(file_loc='-1'):
     if file_loc != -1:
         data = pd.read_csv("{}.csv".format(path_to_file))
         return(data)
     else:
-        print("no file path fiven")
+        logging.info("no file path fiven")
 
 print("reading file")
 path_to_file="https://raw.githubusercontent.com/J535D165/CoronaWatchNL/master/data/rivm_corona_in_nl"
