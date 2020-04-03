@@ -7,7 +7,7 @@ Created on Wed Apr  1 14:51:55 2020
 
 import pandas as pd
 import matplotlib.pyplot as plt
-from config import DB_connection_settings
+from config_test import DB_connection_settings
 import mysql.connector
 from mysql.connector import errorcode
 import logging
