@@ -72,22 +72,12 @@ function updateMap(dateString) {
 }
 </script>
 
-<svg class="img-fluid" id="mapNL" style="max-height: 70vh" viewBox="0 0 240772 301441">
+<svg class="img-fluid" id="mapNL" style="max-height: 70vh" viewBox="-23000 -10000 270000 315000">
 	<?php
 		include('assets/mapNL.svg-part');
 	?>
 	Sorry, your browser does not support inline SVG.
 </svg>
-
-<!--<svg class="img-fluid" width="100" height="100">
-
-	<circle onmouseover="alert('test');" cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
-
-	<a data-toggle="popover" data-container="body" data-trigger="hover" title="Popover Header" data-content="Some content inside the popover" data-placement="top">
-		<circle cx="70" id="testShape" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
-	</a>
-</svg>-->
-
 
 <script>
 $(document).ready(function(){
