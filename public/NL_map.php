@@ -19,10 +19,6 @@
 			
 			
 			<?php include('NL_map_content.php'); ?>
-			
-			<p>
-			Site in aanbouw.
-			</p>
 
 			<!-- Optional JavaScript -->
 			<!-- jQuery first, then Popper.js, then Bootstrap JS -->
