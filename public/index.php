@@ -22,7 +22,7 @@
 	<!-- map Netherlands -->
 	<div class="row">
 		<div class="col-lg-8">
-			<?php include('NL_map_content.php'); ?>
+			<?php include('assets/NL_kaart/NL_map_content.php'); ?>
 			<br>
 			<img src="images/placeholders/placeholder_city_stats.png" class="img-fluid">
 		</div>
