@@ -67,7 +67,7 @@ $(document).ready(function(){
 <div id="errorAlert"></div>
 
 <!-- Map of the Netherlands -->
-<?php include('assets/NL_kaart/mapNL.svg'); ?>
+<?php include('mapNL.svg'); ?>
 
 <!-- slider -->
 <div class="range-wrap mt-3 mx-4">
