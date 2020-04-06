@@ -72,7 +72,7 @@ $(document).ready(function(){
 <!-- slider -->
 <div class="range-wrap mt-3 mx-4">
 	<div class="range-value" id="rangeV"></div>
-	<input id="country-map-slider" type="range" min="0" max="35" value="0" step="1" >
+	<input class="custom-range" id="country-map-slider" type="range" min="0" max="35" value="0" step="1" >
 </div>
 
 <!-- Script to use the slider -->
