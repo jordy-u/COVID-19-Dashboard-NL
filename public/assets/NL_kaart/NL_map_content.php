@@ -34,7 +34,8 @@ function updateMap(date) {
 	var dateString = date.toISOString().substr(0,10)
 	var dataSelectedDay = covid19Reports[dateString];
 	$( ".st0", $("#gemeentes")[0] ).each(function() {
-		color = dataSelectedDay[this.id]/571.0*255;
+		reportedCases = (dataSelectedDay[this.id] != null)? dataSelectedDay[this.id] : 0;
+		color = reportedCases/571.0*255;
 		this.setAttribute("style", "fill: rgb(255," + (255-color) + "," + (255-color) + ")");
 	});
 }
