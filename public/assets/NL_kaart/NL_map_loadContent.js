@@ -4,7 +4,7 @@ var populationPerCity = null;
 
 //Fill the map with data of today.
 function covid19Reports_Process() {
-	var amountOfDays = Object.keys(covid19Reports).length;
+	var amountOfDays = Object.keys(request_covid19Reports.data).length;
 	
 	//Determine last day
 	var newestMapDate = new Date("2020-02-27");
@@ -29,7 +29,7 @@ function covid19Reports_Process() {
 //Example: "2020-04-02"
 function updateMap(date) {
 	var dateString = date.toISOString().substr(0,10)
-	var dataSelectedDay = covid19Reports[dateString];
+	var dataSelectedDay = request_covid19Reports.data[dateString];
 	$( ".st0", $("#gemeentes")[0] ).each(function() {
 		reportedCases = (dataSelectedDay[this.id] != null)? dataSelectedDay[this.id] : 0;
 		color = reportedCases/571.0*255;
@@ -38,13 +38,13 @@ function updateMap(date) {
 }
 
 var request_covid19Reports = {
-	data: "",
+	data: null,
 	url: "/assets/NL_kaart/covid19_reports_every_day.json",
 	errorMessage: "Het laden van het aantal covid-19 meldingen is mislukt. Probeer het later nog eens."
 };
 
 var request_populationPerCity = {
-	data: "",
+	data: null,
 	url: "/assets/NL_kaart/population_per_city.json",
 	errorMessage: "Het laden van aantal inwoners per gemeente is mislukt. Probeer het later nog eens."
 };
@@ -62,7 +62,6 @@ $(document).ready(function(){
 * request_populationPerCity: 	City population
 */
 function dataLoading_createRequest(request_parameters) {
-	console.log("dataLoading_createRequest");
 	var xmlhttp = new XMLHttpRequest();
 	xmlhttp.onreadystatechange = function () { dataLoading_onreadystatechange(this, request_parameters); };
 	xmlhttp.open("GET", request_parameters.url, true);
@@ -77,7 +76,6 @@ function dataLoading_onreadystatechange(this_request, request_parameters) {
 	
 	if (this_request.readyState == 4) {
 		//Request = OK
-		console.log("Request = OK");
 		if (this_request.status == 200) {
 			request_parameters.data = JSON.parse(this_request.responseText);
 			

@@ -25,7 +25,7 @@ const
 		mapDate.setDate(mapDate.getDate() + daysLater);
 		
 		//Don't update the map if the reports are not downloaded yet (when this webpage is loaded).
-		if (covid19Reports)
+		if (request_covid19Reports.data)
 			updateMap(mapDate)
 		
 		//Convert the selected date to "dd month"
