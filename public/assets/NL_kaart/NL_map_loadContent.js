@@ -1,5 +1,6 @@
 //Save the reports here.
 var covid19Reports = null;
+var populationPerCity = null;
 
 //Fill the map with data of today.
 function covid19Reports_Process() {
@@ -35,27 +36,59 @@ function updateMap(date) {
 		this.setAttribute("style", "fill: rgb(255," + (255-color) + "," + (255-color) + ")");
 	});
 }
-$(document).ready(function(){
-	//Load map-information
-	{
-		var xmlhttp = new XMLHttpRequest();
-		var url = "/assets/NL_kaart/covid19_reports_every_day.json";
 
-		xmlhttp.onreadystatechange = function() {
-			if (this.readyState == 4) {
-				//Request = OK
-				if (this.status == 200) {
-					covid19Reports = JSON.parse(this.responseText);
-					covid19Reports_Process(); 
-				}
-				//Request is NOT OK
-				if (this.status != 200) {
-					$("#errorAlert").html('<div class="alert alert-danger" role="alert"><strong>Error: </strong>Het laden van de data is niet gelukt. Probeer het later nog eens.</div>');
-				}
-			}
-		};
-		xmlhttp.open("GET", url, true);
-		xmlhttp.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
-		xmlhttp.send();
-	}  
+var request_covid19Reports = {
+	data: "",
+	url: "/assets/NL_kaart/covid19_reports_every_day.json",
+	errorMessage: "Het laden van het aantal covid-19 meldingen is mislukt. Probeer het later nog eens."
+};
+
+var request_populationPerCity = {
+	data: "",
+	url: "/assets/NL_kaart/population_per_city.json",
+	errorMessage: "Het laden van aantal inwoners per gemeente is mislukt. Probeer het later nog eens."
+};
+
+$(document).ready(function(){
+	//Load reported covid-19 cases
+	dataLoading_createRequest(request_covid19Reports);
+	
+	//Load population per city
+	dataLoading_createRequest(request_populationPerCity);
 });
+
+/*Create a HTTP-request. The requests which are needed are:
+* request_covid19Reports:		amount of covid19Reports
+* request_populationPerCity: 	City population
+*/
+function dataLoading_createRequest(request_parameters) {
+	console.log("dataLoading_createRequest");
+	var xmlhttp = new XMLHttpRequest();
+	xmlhttp.onreadystatechange = function () { dataLoading_onreadystatechange(this, request_parameters); };
+	xmlhttp.open("GET", request_parameters.url, true);
+	xmlhttp.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+	xmlhttp.send();
+}
+
+//When the JSON-data is loaded, it is saved in a variable.
+//When all data is loaded, covid19Reports_Process() will run.
+var dataLoading_numberOfFilesLoaded = 0;
+function dataLoading_onreadystatechange(this_request, request_parameters) {
+	
+	if (this_request.readyState == 4) {
+		//Request = OK
+		console.log("Request = OK");
+		if (this_request.status == 200) {
+			request_parameters.data = JSON.parse(this_request.responseText);
+			
+			// Check if both files are loaded
+			dataLoading_numberOfFilesLoaded++;
+			if (dataLoading_numberOfFilesLoaded == 2)
+				covid19Reports_Process(); 
+		}
+		//Request is NOT OK
+		if (this_request.status != 200) {
+			$("#errorAlert").html($("#errorAlert").html() + '<div class="alert alert-danger" role="alert"><strong>Error: </strong>' + request.errorMessage + '</div>');
+		}
+	}
+}
