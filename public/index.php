@@ -40,7 +40,7 @@
 <p>
 Dit is een site in aanbouw. Binnenkort is deze site een dashboard waar statistieken te vinden zijn over het coronavirus.<br><br>
 
-<a href="info">Klik hier voor achtergrondinformatie over deze website.</a><br><br>
+<a href="privacyverklaring">Privacyverklaring</a><br><br>
 
 </p>
 </div>
