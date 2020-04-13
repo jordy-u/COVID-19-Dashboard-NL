@@ -1,13 +1,15 @@
 //Save the reports here.
 var populationPerCity = null;
 var selectedDate = null;
+var selectedDataset = null;
 
 //Fill the map with data of today.
-function covid19Reports_Process() {
-	var amountOfDays = Object.keys(request_covid19Reports.data).length;
+function covid19Reports_Process(dataSet) {
+	var amountOfDays = Object.keys(dataSet.data).length-1;
+	selectedDataset = dataSet;
 	
 	//Determine last day
-	var newestMapDate = new Date("2020-02-27");
+	var newestMapDate = new Date(dataSet.startDate);
 	newestMapDate.setDate(newestMapDate.getDate() + amountOfDays - 1);
 	
 	//Update the map
@@ -23,6 +25,9 @@ function covid19Reports_Process() {
 	const month = newestMapDate.toLocaleString('default', { month: 'long' });
 	var dateString = newestMapDate.getDate().toString() + ' ' + month
 	rangeV.innerHTML = '<span id="current-date">' + dateString + '</span>';
+	
+	//Change slide to last day
+	range.value = range.max
 }
 
 //Update the map with the specified date. If no date is specified, the last selected date is used.
@@ -31,7 +36,7 @@ function updateMap(date) {
 	else selectedDate = date;
 	
 	var dateString = date.toISOString().substr(0,10)
-	var dataSelectedDay = request_covid19Reports.data[dateString];
+	var dataSelectedDay = selectedDataset.data[dateString];
 	$( ".st0", $("#gemeentes")[0] ).each(function() {
 		reportedCases = (dataSelectedDay[this.id] != null)? dataSelectedDay[this.id] : 0;
 		if ($("#presentation_normalisation")[0].value == "normalised") {
@@ -46,6 +51,7 @@ function updateMap(date) {
 
 var request_covid19Reports = {
 	data: null,
+	startDate: "2020-02-27",
 	url: "/assets/NL_kaart/covid19_reports_every_day.json",
 	errorMessage: "Het laden van het aantal covid-19 meldingen is mislukt. Probeer het later nog eens."
 };
@@ -56,12 +62,28 @@ var request_populationPerCity = {
 	errorMessage: "Het laden van aantal inwoners per gemeente is mislukt. Probeer het later nog eens."
 };
 
+var request_hospitalizationPerCity = {
+	data: null,
+	startDate: "2020-04-08",
+	url: "/assets/NL_kaart/covid19_hospitalizations.json",
+	errorMessage: "Het laden van aantal ziekenhuisopnamens per gemeente is mislukt. Probeer het later nog eens."
+};
+
 $(document).ready(function(){
 	//Load reported covid-19 cases
 	dataLoading_createRequest(request_covid19Reports);
 	
 	//Load population per city
 	dataLoading_createRequest(request_populationPerCity);
+	
+	//Load hospitalization numbers 
+	dataLoading_createRequest(request_hospitalizationPerCity);
+	
+	//When the selected dataset changes:
+	$( "#presentation_catagory" ).change(function() {
+		if (this.value == "covid19ReportedCases") covid19Reports_Process(request_covid19Reports);
+		else if (this.value == "hospitalizationCases") covid19Reports_Process(request_hospitalizationPerCity);
+	});
 });
 
 /*Create a HTTP-request. The requests which are needed are:
@@ -88,8 +110,8 @@ function dataLoading_onreadystatechange(this_request, request_parameters) {
 			
 			// Check if both files are loaded
 			dataLoading_numberOfFilesLoaded++;
-			if (dataLoading_numberOfFilesLoaded == 2)
-				covid19Reports_Process(); 
+			if (dataLoading_numberOfFilesLoaded == 3)
+				covid19Reports_Process(request_covid19Reports); 
 		}
 		//Request is NOT OK
 		if (this_request.status != 200) {

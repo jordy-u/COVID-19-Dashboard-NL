@@ -10,7 +10,7 @@
 <!-- slider -->
 <div class="range-wrap mt-3 mx-4">
 	<div class="range-value" id="rangeV"></div>
-	<input class="custom-range" id="country-map-slider" type="range" min="0" max="35" value="0" step="1" >
+	<input class="custom-range" id="country-map-slider" type="range" step="1" >
 </div>
 
 <!-- Data representation options -->
@@ -36,7 +36,7 @@ const
 	range = document.getElementById('country-map-slider'),
 	rangeV = document.getElementById('rangeV'),
 	setValue = ()=>{
-		var mapDate = new Date("2020-02-27");
+		var mapDate = (selectedDataset != null) ? new Date(selectedDataset.startDate) : new Date(request_covid19Reports.startDate);
 		var daysLater = parseInt(range.value);
 		mapDate.setDate(mapDate.getDate() + daysLater);
 		
