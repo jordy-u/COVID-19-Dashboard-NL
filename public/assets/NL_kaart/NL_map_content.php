@@ -1,6 +1,6 @@
 <script type="text/javascript" src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.1.min.js"></script>
 <link rel="stylesheet" href="/assets/NL_kaart/rangeStyle.css">
-<script type="text/javascript" src="assets/NL_kaart/NL_map_loadContent.js"></script>
+<script type="text/javascript" src="/assets/NL_kaart/NL_map_loadContent.js"></script>
 
 <div id="errorAlert"></div>
 
