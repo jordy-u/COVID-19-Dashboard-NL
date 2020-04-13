@@ -64,7 +64,7 @@ var request_populationPerCity = {
 
 var request_hospitalizationPerCity = {
 	data: null,
-	startDate: "2020-04-08",
+	startDate: "2020-03-31",
 	url: "/assets/NL_kaart/covid19_hospitalizations.json",
 	errorMessage: "Het laden van aantal ziekenhuisopnamens per gemeente is mislukt. Probeer het later nog eens."
 };
