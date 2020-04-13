@@ -15,7 +15,11 @@ class DB_connection_settings:
         name = "John" #database username
         return(name)
     
-    def connection_adress():
+    def host():
         adress = "example.com" #connection adress to database
         return(adress)
+
+    def database():
+        database = "" #name of the default database
+        return(database)
 

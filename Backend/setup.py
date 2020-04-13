@@ -34,6 +34,14 @@ def load_pandas(file_loc='-1'):
 def url_path():
     return("https://raw.githubusercontent.com/J535D165/CoronaWatchNL/master/data/rivm_corona_in_nl") #url to source
 
+#url from where the covid19-reports are loaded as CSV.
+def covid19_reports_load_url():
+    return("https://raw.githubusercontent.com/J535D165/CoronaWatchNL/master/data/rivm_corona_in_nl.csv")
+    
+#Location the covid19-reports are saved in JSON
+def covid19_reports_save_location():
+    return("../public/assets/NL_kaart/covid19_reports_every_day.json")
+
 def connect_to_database():
     cnx = mysql.connector.connect(user=DB_connection_settings.username(), password=DB_connection_settings.password(),
                               host=DB_connection_settings.host(),

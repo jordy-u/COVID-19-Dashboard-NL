@@ -1,5 +1,5 @@
-<<<<<<< HEAD
 Backend/config_test.py
-=======
+Backend/config.py
 ﻿public/assets/database_login_credentials.php
->>>>>>> develop
+Backend/python_env
+*pyc
