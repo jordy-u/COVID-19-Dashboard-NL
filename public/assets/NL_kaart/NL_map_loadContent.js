@@ -1,6 +1,6 @@
 //Save the reports here.
-var covid19Reports = null;
 var populationPerCity = null;
+var selectedDate = null;
 
 //Fill the map with data of today.
 function covid19Reports_Process() {
@@ -25,14 +25,21 @@ function covid19Reports_Process() {
 	rangeV.innerHTML = '<span id="current-date">' + dateString + '</span>';
 }
 
-//Update the map with the date in dateString as described in the loaded JSON-file.
-//Example: "2020-04-02"
+//Update the map with the specified date. If no date is specified, the last selected date is used.
 function updateMap(date) {
+	if (date == undefined) date = selectedDate
+	else selectedDate = date;
+	
 	var dateString = date.toISOString().substr(0,10)
 	var dataSelectedDay = request_covid19Reports.data[dateString];
 	$( ".st0", $("#gemeentes")[0] ).each(function() {
 		reportedCases = (dataSelectedDay[this.id] != null)? dataSelectedDay[this.id] : 0;
-		color = reportedCases/571.0*255;
+		if ($("#presentation_normalisation")[0].value == "normalised") {
+			cityPopulation = (request_populationPerCity.data[this.id] != null)? request_populationPerCity.data[this.id] : 1;
+			color = reportedCases/571.0*255.0/cityPopulation * 100000.0
+		}
+		else
+			color = reportedCases/571.0*255;
 		this.setAttribute("style", "fill: rgb(255," + (255-color) + "," + (255-color) + ")");
 	});
 }

@@ -13,6 +13,22 @@
 	<input class="custom-range" id="country-map-slider" type="range" min="0" max="35" value="0" step="1" >
 </div>
 
+<!-- Data representation options -->
+<form class="form-inline">
+	<label for="presentation_catagory" class="mr-sm-2">Gegevens:</label>
+	<select id="presentation_catagory" class="custom-select mb-2 mr-sm-2">
+		<option value="covid19ReportedCases" selected>Aantal covid-19 meldingen</option>
+		<option value="hospitalizationCases">Aantal ziekenhuisopnamens</option>
+	</select>
+	
+	<label for="presentation_normalisation" class="mr-sm-2">Data presentatie:</label>
+	<select id="presentation_normalisation" class="custom-select mb-2 mr-sm-2" onChange="updateMap()">
+		<option value="normalised" selected>Genormaliseerd</option>
+		<option value="total">Totale aantallen</option>
+	</select>
+</form>
+<br>
+
 <!-- Script to use the slider -->
 <script>
 //https://codepen.io/onyx1812/pen/GRJxmva
