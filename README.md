@@ -1,5 +1,4 @@
 # COVID-19-Dashboard-NL
-A dashboard to show COVID-19 cases in the Netherlands
+A dashboard to show COVID-19 cases in the Netherlands. It allows users to scroll through time and see how the virus has spread in every city.
 
-This website is still in development. It is expected to be finished on the 17th of April.
-The website can temporary be viewed at [covid19.jordyu.nl](https://covid19.jordyu.nl). This site will be moved to another domain later.
+This website is still in development and can be viewed at [coronaperdag.nl](https://coronaperdag.nl).
