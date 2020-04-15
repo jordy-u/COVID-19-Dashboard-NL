@@ -1,0 +1,2396 @@
+[
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Appingedam",
+    "Gemeentecode": 3,
+    "Provincienaam": "Groningen",
+    "Aantal": 1
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Delfzijl",
+    "Gemeentecode": 10,
+    "Provincienaam": "Groningen",
+    "Aantal": 4
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Groningen",
+    "Gemeentecode": 14,
+    "Provincienaam": "Groningen",
+    "Aantal": 9
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Almere",
+    "Gemeentecode": 34,
+    "Provincienaam": "Flevoland",
+    "Aantal": 46
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Veendam",
+    "Gemeentecode": 47,
+    "Provincienaam": "Groningen",
+    "Aantal": 1
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Zeewolde",
+    "Gemeentecode": 50,
+    "Provincienaam": "Flevoland",
+    "Aantal": 3
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Harlingen",
+    "Gemeentecode": 72,
+    "Provincienaam": "Friesland",
+    "Aantal": 1
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Heerenveen",
+    "Gemeentecode": 74,
+    "Provincienaam": "Friesland",
+    "Aantal": 5
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Leeuwarden",
+    "Gemeentecode": 80,
+    "Provincienaam": "Friesland",
+    "Aantal": 16
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Ooststellingwerf",
+    "Gemeentecode": 85,
+    "Provincienaam": "Friesland",
+    "Aantal": 1
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Opsterland",
+    "Gemeentecode": 86,
+    "Provincienaam": "Friesland",
+    "Aantal": 4
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Smallingerland",
+    "Gemeentecode": 90,
+    "Provincienaam": "Friesland",
+    "Aantal": 5
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Weststellingwerf",
+    "Gemeentecode": 98,
+    "Provincienaam": "Friesland",
+    "Aantal": 2
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Assen",
+    "Gemeentecode": 106,
+    "Provincienaam": "Drenthe",
+    "Aantal": 5
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Coevorden",
+    "Gemeentecode": 109,
+    "Provincienaam": "Drenthe",
+    "Aantal": 5
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Emmen",
+    "Gemeentecode": 114,
+    "Provincienaam": "Drenthe",
+    "Aantal": 6
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Hoogeveen",
+    "Gemeentecode": 118,
+    "Provincienaam": "Drenthe",
+    "Aantal": 4
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Meppel",
+    "Gemeentecode": 119,
+    "Provincienaam": "Drenthe",
+    "Aantal": 3
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Almelo",
+    "Gemeentecode": 141,
+    "Provincienaam": "Overijssel",
+    "Aantal": 8
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Borne",
+    "Gemeentecode": 147,
+    "Provincienaam": "Overijssel",
+    "Aantal": 10
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Dalfsen",
+    "Gemeentecode": 148,
+    "Provincienaam": "Overijssel",
+    "Aantal": 7
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Deventer",
+    "Gemeentecode": 150,
+    "Provincienaam": "Overijssel",
+    "Aantal": 21
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Enschede",
+    "Gemeentecode": 153,
+    "Provincienaam": "Overijssel",
+    "Aantal": 24
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Haaksbergen",
+    "Gemeentecode": 158,
+    "Provincienaam": "Overijssel",
+    "Aantal": 4
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Hardenberg",
+    "Gemeentecode": 160,
+    "Provincienaam": "Overijssel",
+    "Aantal": 9
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Hellendoorn",
+    "Gemeentecode": 163,
+    "Provincienaam": "Overijssel",
+    "Aantal": 3
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Hengelo",
+    "Gemeentecode": 164,
+    "Provincienaam": "Overijssel",
+    "Aantal": 6
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Kampen",
+    "Gemeentecode": 166,
+    "Provincienaam": "Overijssel",
+    "Aantal": 34
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Losser",
+    "Gemeentecode": 168,
+    "Provincienaam": "Overijssel",
+    "Aantal": 2
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Noordoostpolder",
+    "Gemeentecode": 171,
+    "Provincienaam": "Flevoland",
+    "Aantal": 6
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Oldenzaal",
+    "Gemeentecode": 173,
+    "Provincienaam": "Overijssel",
+    "Aantal": 8
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Ommen",
+    "Gemeentecode": 175,
+    "Provincienaam": "Overijssel",
+    "Aantal": 4
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Raalte",
+    "Gemeentecode": 177,
+    "Provincienaam": "Overijssel",
+    "Aantal": 14
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Staphorst",
+    "Gemeentecode": 180,
+    "Provincienaam": "Overijssel",
+    "Aantal": 1
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Tubbergen",
+    "Gemeentecode": 183,
+    "Provincienaam": "Overijssel",
+    "Aantal": 7
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Urk",
+    "Gemeentecode": 184,
+    "Provincienaam": "Flevoland",
+    "Aantal": 11
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Wierden",
+    "Gemeentecode": 189,
+    "Provincienaam": "Overijssel",
+    "Aantal": 2
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Zwolle",
+    "Gemeentecode": 193,
+    "Provincienaam": "Overijssel",
+    "Aantal": 24
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Aalten",
+    "Gemeentecode": 197,
+    "Provincienaam": "Gelderland",
+    "Aantal": 1
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Apeldoorn",
+    "Gemeentecode": 200,
+    "Provincienaam": "Gelderland",
+    "Aantal": 19
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Arnhem",
+    "Gemeentecode": 202,
+    "Provincienaam": "Gelderland",
+    "Aantal": 28
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Barneveld",
+    "Gemeentecode": 203,
+    "Provincienaam": "Gelderland",
+    "Aantal": 5
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Beuningen",
+    "Gemeentecode": 209,
+    "Provincienaam": "Gelderland",
+    "Aantal": 12
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Brummen",
+    "Gemeentecode": 213,
+    "Provincienaam": "Gelderland",
+    "Aantal": 3
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Buren",
+    "Gemeentecode": 214,
+    "Provincienaam": "Gelderland",
+    "Aantal": 5
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Culemborg",
+    "Gemeentecode": 216,
+    "Provincienaam": "Gelderland",
+    "Aantal": 13
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Doesburg",
+    "Gemeentecode": 221,
+    "Provincienaam": "Gelderland",
+    "Aantal": 3
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Doetinchem",
+    "Gemeentecode": 222,
+    "Provincienaam": "Gelderland",
+    "Aantal": 5
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Druten",
+    "Gemeentecode": 225,
+    "Provincienaam": "Gelderland",
+    "Aantal": 12
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Duiven",
+    "Gemeentecode": 226,
+    "Provincienaam": "Gelderland",
+    "Aantal": 4
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Ede",
+    "Gemeentecode": 228,
+    "Provincienaam": "Gelderland",
+    "Aantal": 24
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Elburg",
+    "Gemeentecode": 230,
+    "Provincienaam": "Gelderland",
+    "Aantal": 2
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Epe",
+    "Gemeentecode": 232,
+    "Provincienaam": "Gelderland",
+    "Aantal": 7
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Ermelo",
+    "Gemeentecode": 233,
+    "Provincienaam": "Gelderland",
+    "Aantal": 8
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Harderwijk",
+    "Gemeentecode": 243,
+    "Provincienaam": "Gelderland",
+    "Aantal": 8
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Hattem",
+    "Gemeentecode": 244,
+    "Provincienaam": "Gelderland",
+    "Aantal": 3
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Heerde",
+    "Gemeentecode": 246,
+    "Provincienaam": "Gelderland",
+    "Aantal": 17
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Heumen",
+    "Gemeentecode": 252,
+    "Provincienaam": "Gelderland",
+    "Aantal": 7
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Lochem",
+    "Gemeentecode": 262,
+    "Provincienaam": "Gelderland",
+    "Aantal": 2
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Maasdriel",
+    "Gemeentecode": 263,
+    "Provincienaam": "Gelderland",
+    "Aantal": 9
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Nijkerk",
+    "Gemeentecode": 267,
+    "Provincienaam": "Gelderland",
+    "Aantal": 10
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Nijmegen",
+    "Gemeentecode": 268,
+    "Provincienaam": "Gelderland",
+    "Aantal": 72
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Oldebroek",
+    "Gemeentecode": 269,
+    "Provincienaam": "Gelderland",
+    "Aantal": 6
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Putten",
+    "Gemeentecode": 273,
+    "Provincienaam": "Gelderland",
+    "Aantal": 1
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Renkum",
+    "Gemeentecode": 274,
+    "Provincienaam": "Gelderland",
+    "Aantal": 10
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Rheden",
+    "Gemeentecode": 275,
+    "Provincienaam": "Gelderland",
+    "Aantal": 20
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Rozendaal",
+    "Gemeentecode": 277,
+    "Provincienaam": "Gelderland",
+    "Aantal": 1
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Tiel",
+    "Gemeentecode": 281,
+    "Provincienaam": "Gelderland",
+    "Aantal": 21
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Voorst",
+    "Gemeentecode": 285,
+    "Provincienaam": "Gelderland",
+    "Aantal": 3
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Wageningen",
+    "Gemeentecode": 289,
+    "Provincienaam": "Gelderland",
+    "Aantal": 5
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Westervoort",
+    "Gemeentecode": 293,
+    "Provincienaam": "Gelderland",
+    "Aantal": 2
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Winterswijk",
+    "Gemeentecode": 294,
+    "Provincienaam": "Gelderland",
+    "Aantal": 1
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Wijchen",
+    "Gemeentecode": 296,
+    "Provincienaam": "Gelderland",
+    "Aantal": 27
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Zaltbommel",
+    "Gemeentecode": 297,
+    "Provincienaam": "Gelderland",
+    "Aantal": 8
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Zevenaar",
+    "Gemeentecode": 299,
+    "Provincienaam": "Gelderland",
+    "Aantal": 16
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Zutphen",
+    "Gemeentecode": 301,
+    "Provincienaam": "Gelderland",
+    "Aantal": 5
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Nunspeet",
+    "Gemeentecode": 302,
+    "Provincienaam": "Gelderland",
+    "Aantal": 15
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Dronten",
+    "Gemeentecode": 303,
+    "Provincienaam": "Flevoland",
+    "Aantal": 8
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Amersfoort",
+    "Gemeentecode": 307,
+    "Provincienaam": "Utrecht",
+    "Aantal": 24
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Baarn",
+    "Gemeentecode": 308,
+    "Provincienaam": "Utrecht",
+    "Aantal": 2
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "De Bilt",
+    "Gemeentecode": 310,
+    "Provincienaam": "Utrecht",
+    "Aantal": 11
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Bunnik",
+    "Gemeentecode": 312,
+    "Provincienaam": "Utrecht",
+    "Aantal": 4
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Bunschoten",
+    "Gemeentecode": 313,
+    "Provincienaam": "Utrecht",
+    "Aantal": 1
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Eemnes",
+    "Gemeentecode": 317,
+    "Provincienaam": "Utrecht",
+    "Aantal": 1
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Houten",
+    "Gemeentecode": 321,
+    "Provincienaam": "Utrecht",
+    "Aantal": 9
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Leusden",
+    "Gemeentecode": 327,
+    "Provincienaam": "Utrecht",
+    "Aantal": 5
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Lopik",
+    "Gemeentecode": 331,
+    "Provincienaam": "Utrecht",
+    "Aantal": 11
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Montfoort",
+    "Gemeentecode": 335,
+    "Provincienaam": "Utrecht",
+    "Aantal": 9
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Renswoude",
+    "Gemeentecode": 339,
+    "Provincienaam": "Utrecht",
+    "Aantal": 1
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Rhenen",
+    "Gemeentecode": 340,
+    "Provincienaam": "Utrecht",
+    "Aantal": 2
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Soest",
+    "Gemeentecode": 342,
+    "Provincienaam": "Utrecht",
+    "Aantal": 9
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Utrecht",
+    "Gemeentecode": 344,
+    "Provincienaam": "Utrecht",
+    "Aantal": 75
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Veenendaal",
+    "Gemeentecode": 345,
+    "Provincienaam": "Utrecht",
+    "Aantal": 7
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Woudenberg",
+    "Gemeentecode": 351,
+    "Provincienaam": "Utrecht",
+    "Aantal": 2
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Wijk bij Duurstede",
+    "Gemeentecode": 352,
+    "Provincienaam": "Utrecht",
+    "Aantal": 5
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "IJsselstein",
+    "Gemeentecode": 353,
+    "Provincienaam": "Utrecht",
+    "Aantal": 18
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Zeist",
+    "Gemeentecode": 355,
+    "Provincienaam": "Utrecht",
+    "Aantal": 12
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Nieuwegein",
+    "Gemeentecode": 356,
+    "Provincienaam": "Utrecht",
+    "Aantal": 15
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Aalsmeer",
+    "Gemeentecode": 358,
+    "Provincienaam": "Noord-Holland",
+    "Aantal": 5
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Alkmaar",
+    "Gemeentecode": 361,
+    "Provincienaam": "Noord-Holland",
+    "Aantal": 19
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Amstelveen",
+    "Gemeentecode": 362,
+    "Provincienaam": "Noord-Holland",
+    "Aantal": 28
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Amsterdam",
+    "Gemeentecode": 363,
+    "Provincienaam": "Noord-Holland",
+    "Aantal": 244
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Beemster",
+    "Gemeentecode": 370,
+    "Provincienaam": "Noord-Holland",
+    "Aantal": 2
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Bergen (NH.)",
+    "Gemeentecode": 373,
+    "Provincienaam": "Noord-Holland",
+    "Aantal": 8
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Beverwijk",
+    "Gemeentecode": 375,
+    "Provincienaam": "Noord-Holland",
+    "Aantal": 5
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Blaricum",
+    "Gemeentecode": 376,
+    "Provincienaam": "Noord-Holland",
+    "Aantal": 1
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Bloemendaal",
+    "Gemeentecode": 377,
+    "Provincienaam": "Noord-Holland",
+    "Aantal": 3
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Castricum",
+    "Gemeentecode": 383,
+    "Provincienaam": "Noord-Holland",
+    "Aantal": 8
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Diemen",
+    "Gemeentecode": 384,
+    "Provincienaam": "Noord-Holland",
+    "Aantal": 4
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Edam-Volendam",
+    "Gemeentecode": 385,
+    "Provincienaam": "Noord-Holland",
+    "Aantal": 10
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Enkhuizen",
+    "Gemeentecode": 388,
+    "Provincienaam": "Noord-Holland",
+    "Aantal": 13
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Haarlem",
+    "Gemeentecode": 392,
+    "Provincienaam": "Noord-Holland",
+    "Aantal": 26
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Haarlemmermeer",
+    "Gemeentecode": 394,
+    "Provincienaam": "Noord-Holland",
+    "Aantal": 31
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Heemskerk",
+    "Gemeentecode": 396,
+    "Provincienaam": "Noord-Holland",
+    "Aantal": 14
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Heemstede",
+    "Gemeentecode": 397,
+    "Provincienaam": "Noord-Holland",
+    "Aantal": 4
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Heerhugowaard",
+    "Gemeentecode": 398,
+    "Provincienaam": "Noord-Holland",
+    "Aantal": 17
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Heiloo",
+    "Gemeentecode": 399,
+    "Provincienaam": "Noord-Holland",
+    "Aantal": 5
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Den Helder",
+    "Gemeentecode": 400,
+    "Provincienaam": "Noord-Holland",
+    "Aantal": 6
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Hilversum",
+    "Gemeentecode": 402,
+    "Provincienaam": "Noord-Holland",
+    "Aantal": 13
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Hoorn",
+    "Gemeentecode": 405,
+    "Provincienaam": "Noord-Holland",
+    "Aantal": 13
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Huizen",
+    "Gemeentecode": 406,
+    "Provincienaam": "Noord-Holland",
+    "Aantal": 9
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Landsmeer",
+    "Gemeentecode": 415,
+    "Provincienaam": "Noord-Holland",
+    "Aantal": 3
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Langedijk",
+    "Gemeentecode": 416,
+    "Provincienaam": "Noord-Holland",
+    "Aantal": 6
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Laren",
+    "Gemeentecode": 417,
+    "Provincienaam": "Noord-Holland",
+    "Aantal": 5
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Medemblik",
+    "Gemeentecode": 420,
+    "Provincienaam": "Noord-Holland",
+    "Aantal": 9
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Oostzaan",
+    "Gemeentecode": 431,
+    "Provincienaam": "Noord-Holland",
+    "Aantal": 2
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Opmeer",
+    "Gemeentecode": 432,
+    "Provincienaam": "Noord-Holland",
+    "Aantal": 1
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Ouder-Amstel",
+    "Gemeentecode": 437,
+    "Provincienaam": "Noord-Holland",
+    "Aantal": 3
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Purmerend",
+    "Gemeentecode": 439,
+    "Provincienaam": "Noord-Holland",
+    "Aantal": 35
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Schagen",
+    "Gemeentecode": 441,
+    "Provincienaam": "Noord-Holland",
+    "Aantal": 10
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Texel",
+    "Gemeentecode": 448,
+    "Provincienaam": "Noord-Holland",
+    "Aantal": 1
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Uitgeest",
+    "Gemeentecode": 450,
+    "Provincienaam": "Noord-Holland",
+    "Aantal": 3
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Uithoorn",
+    "Gemeentecode": 451,
+    "Provincienaam": "Noord-Holland",
+    "Aantal": 9
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Velsen",
+    "Gemeentecode": 453,
+    "Provincienaam": "Noord-Holland",
+    "Aantal": 13
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Weesp",
+    "Gemeentecode": 457,
+    "Provincienaam": "Noord-Holland",
+    "Aantal": 2
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Zandvoort",
+    "Gemeentecode": 473,
+    "Provincienaam": "Noord-Holland",
+    "Aantal": 4
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Zaanstad",
+    "Gemeentecode": 479,
+    "Provincienaam": "Noord-Holland",
+    "Aantal": 32
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Alblasserdam",
+    "Gemeentecode": 482,
+    "Provincienaam": "Zuid-Holland",
+    "Aantal": 2
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Alphen aan den Rijn",
+    "Gemeentecode": 484,
+    "Provincienaam": "Zuid-Holland",
+    "Aantal": 29
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Barendrecht",
+    "Gemeentecode": 489,
+    "Provincienaam": "Zuid-Holland",
+    "Aantal": 16
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Drechterland",
+    "Gemeentecode": 498,
+    "Provincienaam": "Noord-Holland",
+    "Aantal": 1
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Brielle",
+    "Gemeentecode": 501,
+    "Provincienaam": "Zuid-Holland",
+    "Aantal": 5
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Capelle aan den IJssel",
+    "Gemeentecode": 502,
+    "Provincienaam": "Zuid-Holland",
+    "Aantal": 20
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Delft",
+    "Gemeentecode": 503,
+    "Provincienaam": "Zuid-Holland",
+    "Aantal": 19
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Dordrecht",
+    "Gemeentecode": 505,
+    "Provincienaam": "Zuid-Holland",
+    "Aantal": 26
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Gorinchem",
+    "Gemeentecode": 512,
+    "Provincienaam": "Zuid-Holland",
+    "Aantal": 9
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Gouda",
+    "Gemeentecode": 513,
+    "Provincienaam": "Zuid-Holland",
+    "Aantal": 13
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "'s-Gravenhage",
+    "Gemeentecode": 518,
+    "Provincienaam": "Zuid-Holland",
+    "Aantal": 81
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Hardinxveld-Giessendam",
+    "Gemeentecode": 523,
+    "Provincienaam": "Zuid-Holland",
+    "Aantal": 1
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Hellevoetsluis",
+    "Gemeentecode": 530,
+    "Provincienaam": "Zuid-Holland",
+    "Aantal": 4
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Hendrik-Ido-Ambacht",
+    "Gemeentecode": 531,
+    "Provincienaam": "Zuid-Holland",
+    "Aantal": 3
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Stede Broec",
+    "Gemeentecode": 532,
+    "Provincienaam": "Noord-Holland",
+    "Aantal": 10
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Hillegom",
+    "Gemeentecode": 534,
+    "Provincienaam": "Zuid-Holland",
+    "Aantal": 3
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Katwijk",
+    "Gemeentecode": 537,
+    "Provincienaam": "Zuid-Holland",
+    "Aantal": 8
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Krimpen aan den IJssel",
+    "Gemeentecode": 542,
+    "Provincienaam": "Zuid-Holland",
+    "Aantal": 2
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Leiden",
+    "Gemeentecode": 546,
+    "Provincienaam": "Zuid-Holland",
+    "Aantal": 16
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Leiderdorp",
+    "Gemeentecode": 547,
+    "Provincienaam": "Zuid-Holland",
+    "Aantal": 5
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Lisse",
+    "Gemeentecode": 553,
+    "Provincienaam": "Zuid-Holland",
+    "Aantal": 3
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Maassluis",
+    "Gemeentecode": 556,
+    "Provincienaam": "Zuid-Holland",
+    "Aantal": 8
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Nieuwkoop",
+    "Gemeentecode": 569,
+    "Provincienaam": "Zuid-Holland",
+    "Aantal": 4
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Noordwijk",
+    "Gemeentecode": 575,
+    "Provincienaam": "Zuid-Holland",
+    "Aantal": 8
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Oegstgeest",
+    "Gemeentecode": 579,
+    "Provincienaam": "Zuid-Holland",
+    "Aantal": 3
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Oudewater",
+    "Gemeentecode": 589,
+    "Provincienaam": "Utrecht",
+    "Aantal": 15
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Ridderkerk",
+    "Gemeentecode": 597,
+    "Provincienaam": "Zuid-Holland",
+    "Aantal": 18
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Rotterdam",
+    "Gemeentecode": 599,
+    "Provincienaam": "Zuid-Holland",
+    "Aantal": 120
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Rijswijk",
+    "Gemeentecode": 603,
+    "Provincienaam": "Zuid-Holland",
+    "Aantal": 12
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Schiedam",
+    "Gemeentecode": 606,
+    "Provincienaam": "Zuid-Holland",
+    "Aantal": 19
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Sliedrecht",
+    "Gemeentecode": 610,
+    "Provincienaam": "Zuid-Holland",
+    "Aantal": 1
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Albrandswaard",
+    "Gemeentecode": 613,
+    "Provincienaam": "Zuid-Holland",
+    "Aantal": 4
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Westvoorne",
+    "Gemeentecode": 614,
+    "Provincienaam": "Zuid-Holland",
+    "Aantal": 4
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Vlaardingen",
+    "Gemeentecode": 622,
+    "Provincienaam": "Zuid-Holland",
+    "Aantal": 12
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Voorschoten",
+    "Gemeentecode": 626,
+    "Provincienaam": "Zuid-Holland",
+    "Aantal": 4
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Waddinxveen",
+    "Gemeentecode": 627,
+    "Provincienaam": "Zuid-Holland",
+    "Aantal": 4
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Wassenaar",
+    "Gemeentecode": 629,
+    "Provincienaam": "Zuid-Holland",
+    "Aantal": 2
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Woerden",
+    "Gemeentecode": 632,
+    "Provincienaam": "Utrecht",
+    "Aantal": 22
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Zoetermeer",
+    "Gemeentecode": 637,
+    "Provincienaam": "Zuid-Holland",
+    "Aantal": 21
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Zoeterwoude",
+    "Gemeentecode": 638,
+    "Provincienaam": "Zuid-Holland",
+    "Aantal": 2
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Zwijndrecht",
+    "Gemeentecode": 642,
+    "Provincienaam": "Zuid-Holland",
+    "Aantal": 9
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Borsele",
+    "Gemeentecode": 654,
+    "Provincienaam": "Zeeland",
+    "Aantal": 3
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Goes",
+    "Gemeentecode": 664,
+    "Provincienaam": "Zeeland",
+    "Aantal": 5
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "West Maas en Waal",
+    "Gemeentecode": 668,
+    "Provincienaam": "Gelderland",
+    "Aantal": 9
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Hulst",
+    "Gemeentecode": 677,
+    "Provincienaam": "Zeeland",
+    "Aantal": 4
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Kapelle",
+    "Gemeentecode": 678,
+    "Provincienaam": "Zeeland",
+    "Aantal": 1
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Middelburg",
+    "Gemeentecode": 687,
+    "Provincienaam": "Zeeland",
+    "Aantal": 10
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Reimerswaal",
+    "Gemeentecode": 703,
+    "Provincienaam": "Zeeland",
+    "Aantal": 4
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Terneuzen",
+    "Gemeentecode": 715,
+    "Provincienaam": "Zeeland",
+    "Aantal": 11
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Tholen",
+    "Gemeentecode": 716,
+    "Provincienaam": "Zeeland",
+    "Aantal": 20
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Veere",
+    "Gemeentecode": 717,
+    "Provincienaam": "Zeeland",
+    "Aantal": 3
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Vlissingen",
+    "Gemeentecode": 718,
+    "Provincienaam": "Zeeland",
+    "Aantal": 5
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "De Ronde Venen",
+    "Gemeentecode": 736,
+    "Provincienaam": "Utrecht",
+    "Aantal": 11
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Tytsjerksteradiel",
+    "Gemeentecode": 737,
+    "Provincienaam": "Friesland",
+    "Aantal": 1
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Asten",
+    "Gemeentecode": 743,
+    "Provincienaam": "Noord-Brabant",
+    "Aantal": 4
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Baarle-Nassau",
+    "Gemeentecode": 744,
+    "Provincienaam": "Noord-Brabant",
+    "Aantal": 1
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Bergen op Zoom",
+    "Gemeentecode": 748,
+    "Provincienaam": "Noord-Brabant",
+    "Aantal": 11
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Best",
+    "Gemeentecode": 753,
+    "Provincienaam": "Noord-Brabant",
+    "Aantal": 18
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Boekel",
+    "Gemeentecode": 755,
+    "Provincienaam": "Noord-Brabant",
+    "Aantal": 21
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Boxmeer",
+    "Gemeentecode": 756,
+    "Provincienaam": "Noord-Brabant",
+    "Aantal": 8
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Boxtel",
+    "Gemeentecode": 757,
+    "Provincienaam": "Noord-Brabant",
+    "Aantal": 9
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Breda",
+    "Gemeentecode": 758,
+    "Provincienaam": "Noord-Brabant",
+    "Aantal": 113
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Deurne",
+    "Gemeentecode": 762,
+    "Provincienaam": "Noord-Brabant",
+    "Aantal": 34
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Pekela",
+    "Gemeentecode": 765,
+    "Provincienaam": "Groningen",
+    "Aantal": 3
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Dongen",
+    "Gemeentecode": 766,
+    "Provincienaam": "Noord-Brabant",
+    "Aantal": 7
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Eersel",
+    "Gemeentecode": 770,
+    "Provincienaam": "Noord-Brabant",
+    "Aantal": 11
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Eindhoven",
+    "Gemeentecode": 772,
+    "Provincienaam": "Noord-Brabant",
+    "Aantal": 46
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Etten-Leur",
+    "Gemeentecode": 777,
+    "Provincienaam": "Noord-Brabant",
+    "Aantal": 21
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Geertruidenberg",
+    "Gemeentecode": 779,
+    "Provincienaam": "Noord-Brabant",
+    "Aantal": 7
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Gilze en Rijen",
+    "Gemeentecode": 784,
+    "Provincienaam": "Noord-Brabant",
+    "Aantal": 13
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Goirle",
+    "Gemeentecode": 785,
+    "Provincienaam": "Noord-Brabant",
+    "Aantal": 16
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Grave",
+    "Gemeentecode": 786,
+    "Provincienaam": "Noord-Brabant",
+    "Aantal": 10
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Haaren",
+    "Gemeentecode": 788,
+    "Provincienaam": "Noord-Brabant",
+    "Aantal": 14
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Helmond",
+    "Gemeentecode": 794,
+    "Provincienaam": "Noord-Brabant",
+    "Aantal": 35
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "'s-Hertogenbosch",
+    "Gemeentecode": 796,
+    "Provincienaam": "Noord-Brabant",
+    "Aantal": 67
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Heusden",
+    "Gemeentecode": 797,
+    "Provincienaam": "Noord-Brabant",
+    "Aantal": 22
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Hilvarenbeek",
+    "Gemeentecode": 798,
+    "Provincienaam": "Noord-Brabant",
+    "Aantal": 4
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Loon op Zand",
+    "Gemeentecode": 809,
+    "Provincienaam": "Noord-Brabant",
+    "Aantal": 15
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Mill en Sint Hubert",
+    "Gemeentecode": 815,
+    "Provincienaam": "Noord-Brabant",
+    "Aantal": 6
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Nuenen, Gerwen en Nederwetten",
+    "Gemeentecode": 820,
+    "Provincienaam": "Noord-Brabant",
+    "Aantal": 7
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Oirschot",
+    "Gemeentecode": 823,
+    "Provincienaam": "Noord-Brabant",
+    "Aantal": 6
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Oisterwijk",
+    "Gemeentecode": 824,
+    "Provincienaam": "Noord-Brabant",
+    "Aantal": 9
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Oosterhout",
+    "Gemeentecode": 826,
+    "Provincienaam": "Noord-Brabant",
+    "Aantal": 23
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Oss",
+    "Gemeentecode": 828,
+    "Provincienaam": "Noord-Brabant",
+    "Aantal": 73
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Rucphen",
+    "Gemeentecode": 840,
+    "Provincienaam": "Noord-Brabant",
+    "Aantal": 3
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Sint-Michielsgestel",
+    "Gemeentecode": 845,
+    "Provincienaam": "Noord-Brabant",
+    "Aantal": 14
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Someren",
+    "Gemeentecode": 847,
+    "Provincienaam": "Noord-Brabant",
+    "Aantal": 8
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Son en Breugel",
+    "Gemeentecode": 848,
+    "Provincienaam": "Noord-Brabant",
+    "Aantal": 15
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Steenbergen",
+    "Gemeentecode": 851,
+    "Provincienaam": "Noord-Brabant",
+    "Aantal": 7
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Waterland",
+    "Gemeentecode": 852,
+    "Provincienaam": "Noord-Holland",
+    "Aantal": 8
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Tilburg",
+    "Gemeentecode": 855,
+    "Provincienaam": "Noord-Brabant",
+    "Aantal": 115
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Uden",
+    "Gemeentecode": 856,
+    "Provincienaam": "Noord-Brabant",
+    "Aantal": 67
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Valkenswaard",
+    "Gemeentecode": 858,
+    "Provincienaam": "Noord-Brabant",
+    "Aantal": 6
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Veldhoven",
+    "Gemeentecode": 861,
+    "Provincienaam": "Noord-Brabant",
+    "Aantal": 7
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Vught",
+    "Gemeentecode": 865,
+    "Provincienaam": "Noord-Brabant",
+    "Aantal": 23
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Waalwijk",
+    "Gemeentecode": 867,
+    "Provincienaam": "Noord-Brabant",
+    "Aantal": 16
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Woensdrecht",
+    "Gemeentecode": 873,
+    "Provincienaam": "Noord-Brabant",
+    "Aantal": 4
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Zundert",
+    "Gemeentecode": 879,
+    "Provincienaam": "Noord-Brabant",
+    "Aantal": 13
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Wormerland",
+    "Gemeentecode": 880,
+    "Provincienaam": "Noord-Holland",
+    "Aantal": 8
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Landgraaf",
+    "Gemeentecode": 882,
+    "Provincienaam": "Limburg",
+    "Aantal": 7
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Beesel",
+    "Gemeentecode": 889,
+    "Provincienaam": "Limburg",
+    "Aantal": 10
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Bergen (L.)",
+    "Gemeentecode": 893,
+    "Provincienaam": "Limburg",
+    "Aantal": 3
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Brunssum",
+    "Gemeentecode": 899,
+    "Provincienaam": "Limburg",
+    "Aantal": 9
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Gennep",
+    "Gemeentecode": 907,
+    "Provincienaam": "Limburg",
+    "Aantal": 9
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Heerlen",
+    "Gemeentecode": 917,
+    "Provincienaam": "Limburg",
+    "Aantal": 24
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Kerkrade",
+    "Gemeentecode": 928,
+    "Provincienaam": "Limburg",
+    "Aantal": 10
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Maastricht",
+    "Gemeentecode": 935,
+    "Provincienaam": "Limburg",
+    "Aantal": 25
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Meerssen",
+    "Gemeentecode": 938,
+    "Provincienaam": "Limburg",
+    "Aantal": 3
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Mook en Middelaar",
+    "Gemeentecode": 944,
+    "Provincienaam": "Limburg",
+    "Aantal": 3
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Nederweert",
+    "Gemeentecode": 946,
+    "Provincienaam": "Limburg",
+    "Aantal": 22
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Roermond",
+    "Gemeentecode": 957,
+    "Provincienaam": "Limburg",
+    "Aantal": 25
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Simpelveld",
+    "Gemeentecode": 965,
+    "Provincienaam": "Limburg",
+    "Aantal": 2
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Stein",
+    "Gemeentecode": 971,
+    "Provincienaam": "Limburg",
+    "Aantal": 11
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Vaals",
+    "Gemeentecode": 981,
+    "Provincienaam": "Limburg",
+    "Aantal": 2
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Venlo",
+    "Gemeentecode": 983,
+    "Provincienaam": "Limburg",
+    "Aantal": 64
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Venray",
+    "Gemeentecode": 984,
+    "Provincienaam": "Limburg",
+    "Aantal": 22
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Voerendaal",
+    "Gemeentecode": 986,
+    "Provincienaam": "Limburg",
+    "Aantal": 2
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Weert",
+    "Gemeentecode": 988,
+    "Provincienaam": "Limburg",
+    "Aantal": 27
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Valkenburg aan de Geul",
+    "Gemeentecode": 994,
+    "Provincienaam": "Limburg",
+    "Aantal": 2
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Lelystad",
+    "Gemeentecode": 995,
+    "Provincienaam": "Flevoland",
+    "Aantal": 24
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Horst aan de Maas",
+    "Gemeentecode": 1507,
+    "Provincienaam": "Limburg",
+    "Aantal": 21
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Oude IJsselstreek",
+    "Gemeentecode": 1509,
+    "Provincienaam": "Gelderland",
+    "Aantal": 2
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Teylingen",
+    "Gemeentecode": 1525,
+    "Provincienaam": "Zuid-Holland",
+    "Aantal": 6
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Utrechtse Heuvelrug",
+    "Gemeentecode": 1581,
+    "Provincienaam": "Utrecht",
+    "Aantal": 11
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Oost Gelre",
+    "Gemeentecode": 1586,
+    "Provincienaam": "Gelderland",
+    "Aantal": 2
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Koggenland",
+    "Gemeentecode": 1598,
+    "Provincienaam": "Noord-Holland",
+    "Aantal": 4
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Lansingerland",
+    "Gemeentecode": 1621,
+    "Provincienaam": "Zuid-Holland",
+    "Aantal": 15
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Leudal",
+    "Gemeentecode": 1640,
+    "Provincienaam": "Limburg",
+    "Aantal": 32
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Maasgouw",
+    "Gemeentecode": 1641,
+    "Provincienaam": "Limburg",
+    "Aantal": 10
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Gemert-Bakel",
+    "Gemeentecode": 1652,
+    "Provincienaam": "Noord-Brabant",
+    "Aantal": 48
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Halderberge",
+    "Gemeentecode": 1655,
+    "Provincienaam": "Noord-Brabant",
+    "Aantal": 9
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Heeze-Leende",
+    "Gemeentecode": 1658,
+    "Provincienaam": "Noord-Brabant",
+    "Aantal": 5
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Laarbeek",
+    "Gemeentecode": 1659,
+    "Provincienaam": "Noord-Brabant",
+    "Aantal": 18
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Reusel-De Mierden",
+    "Gemeentecode": 1667,
+    "Provincienaam": "Noord-Brabant",
+    "Aantal": 1
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Roerdalen",
+    "Gemeentecode": 1669,
+    "Provincienaam": "Limburg",
+    "Aantal": 13
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Roosendaal",
+    "Gemeentecode": 1674,
+    "Provincienaam": "Noord-Brabant",
+    "Aantal": 11
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Schouwen-Duiveland",
+    "Gemeentecode": 1676,
+    "Provincienaam": "Zeeland",
+    "Aantal": 6
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Aa en Hunze",
+    "Gemeentecode": 1680,
+    "Provincienaam": "Drenthe",
+    "Aantal": 1
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Borger-Odoorn",
+    "Gemeentecode": 1681,
+    "Provincienaam": "Drenthe",
+    "Aantal": 1
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Cuijk",
+    "Gemeentecode": 1684,
+    "Provincienaam": "Noord-Brabant",
+    "Aantal": 5
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Landerd",
+    "Gemeentecode": 1685,
+    "Provincienaam": "Noord-Brabant",
+    "Aantal": 20
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "De Wolden",
+    "Gemeentecode": 1690,
+    "Provincienaam": "Drenthe",
+    "Aantal": 2
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Wijdemeren",
+    "Gemeentecode": 1696,
+    "Provincienaam": "Noord-Holland",
+    "Aantal": 3
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Noordenveld",
+    "Gemeentecode": 1699,
+    "Provincienaam": "Drenthe",
+    "Aantal": 1
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Twenterand",
+    "Gemeentecode": 1700,
+    "Provincienaam": "Overijssel",
+    "Aantal": 5
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Westerveld",
+    "Gemeentecode": 1701,
+    "Provincienaam": "Drenthe",
+    "Aantal": 1
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Sint Anthonis",
+    "Gemeentecode": 1702,
+    "Provincienaam": "Noord-Brabant",
+    "Aantal": 14
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Lingewaard",
+    "Gemeentecode": 1705,
+    "Provincienaam": "Gelderland",
+    "Aantal": 14
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Cranendonck",
+    "Gemeentecode": 1706,
+    "Provincienaam": "Noord-Brabant",
+    "Aantal": 28
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Steenwijkerland",
+    "Gemeentecode": 1708,
+    "Provincienaam": "Overijssel",
+    "Aantal": 6
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Moerdijk",
+    "Gemeentecode": 1709,
+    "Provincienaam": "Noord-Brabant",
+    "Aantal": 5
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Echt-Susteren",
+    "Gemeentecode": 1711,
+    "Provincienaam": "Limburg",
+    "Aantal": 20
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Sluis",
+    "Gemeentecode": 1714,
+    "Provincienaam": "Zeeland",
+    "Aantal": 4
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Drimmelen",
+    "Gemeentecode": 1719,
+    "Provincienaam": "Noord-Brabant",
+    "Aantal": 14
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Bernheze",
+    "Gemeentecode": 1721,
+    "Provincienaam": "Noord-Brabant",
+    "Aantal": 57
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Alphen-Chaam",
+    "Gemeentecode": 1723,
+    "Provincienaam": "Noord-Brabant",
+    "Aantal": 9
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Bergeijk",
+    "Gemeentecode": 1724,
+    "Provincienaam": "Noord-Brabant",
+    "Aantal": 5
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Bladel",
+    "Gemeentecode": 1728,
+    "Provincienaam": "Noord-Brabant",
+    "Aantal": 7
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Gulpen-Wittem",
+    "Gemeentecode": 1729,
+    "Provincienaam": "Limburg",
+    "Aantal": 2
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Tynaarlo",
+    "Gemeentecode": 1730,
+    "Provincienaam": "Drenthe",
+    "Aantal": 5
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Midden-Drenthe",
+    "Gemeentecode": 1731,
+    "Provincienaam": "Drenthe",
+    "Aantal": 4
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Overbetuwe",
+    "Gemeentecode": 1734,
+    "Provincienaam": "Gelderland",
+    "Aantal": 32
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Hof van Twente",
+    "Gemeentecode": 1735,
+    "Provincienaam": "Overijssel",
+    "Aantal": 8
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Neder-Betuwe",
+    "Gemeentecode": 1740,
+    "Provincienaam": "Gelderland",
+    "Aantal": 22
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Rijssen-Holten",
+    "Gemeentecode": 1742,
+    "Provincienaam": "Overijssel",
+    "Aantal": 8
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Geldrop-Mierlo",
+    "Gemeentecode": 1771,
+    "Provincienaam": "Noord-Brabant",
+    "Aantal": 9
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Olst-Wijhe",
+    "Gemeentecode": 1773,
+    "Provincienaam": "Overijssel",
+    "Aantal": 5
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Dinkelland",
+    "Gemeentecode": 1774,
+    "Provincienaam": "Overijssel",
+    "Aantal": 11
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Westland",
+    "Gemeentecode": 1783,
+    "Provincienaam": "Zuid-Holland",
+    "Aantal": 25
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Midden-Delfland",
+    "Gemeentecode": 1842,
+    "Provincienaam": "Zuid-Holland",
+    "Aantal": 1
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Berkelland",
+    "Gemeentecode": 1859,
+    "Provincienaam": "Gelderland",
+    "Aantal": 1
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Bronckhorst",
+    "Gemeentecode": 1876,
+    "Provincienaam": "Gelderland",
+    "Aantal": 1
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Sittard-Geleen",
+    "Gemeentecode": 1883,
+    "Provincienaam": "Limburg",
+    "Aantal": 24
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Kaag en Braassem",
+    "Gemeentecode": 1884,
+    "Provincienaam": "Zuid-Holland",
+    "Aantal": 4
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Zuidplas",
+    "Gemeentecode": 1892,
+    "Provincienaam": "Zuid-Holland",
+    "Aantal": 9
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Peel en Maas",
+    "Gemeentecode": 1894,
+    "Provincienaam": "Limburg",
+    "Aantal": 103
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Oldambt",
+    "Gemeentecode": 1895,
+    "Provincienaam": "Groningen",
+    "Aantal": 1
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Zwartewaterland",
+    "Gemeentecode": 1896,
+    "Provincienaam": "Overijssel",
+    "Aantal": 20
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Súdwest-Fryslân",
+    "Gemeentecode": 1900,
+    "Provincienaam": "Friesland",
+    "Aantal": 12
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Bodegraven-Reeuwijk",
+    "Gemeentecode": 1901,
+    "Provincienaam": "Zuid-Holland",
+    "Aantal": 2
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Eijsden-Margraten",
+    "Gemeentecode": 1903,
+    "Provincienaam": "Limburg",
+    "Aantal": 6
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Stichtse Vecht",
+    "Gemeentecode": 1904,
+    "Provincienaam": "Utrecht",
+    "Aantal": 16
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Hollands Kroon",
+    "Gemeentecode": 1911,
+    "Provincienaam": "Noord-Holland",
+    "Aantal": 17
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Leidschendam-Voorburg",
+    "Gemeentecode": 1916,
+    "Provincienaam": "Zuid-Holland",
+    "Aantal": 7
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Goeree-Overflakkee",
+    "Gemeentecode": 1924,
+    "Provincienaam": "Zuid-Holland",
+    "Aantal": 24
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Pijnacker-Nootdorp",
+    "Gemeentecode": 1926,
+    "Provincienaam": "Zuid-Holland",
+    "Aantal": 9
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Nissewaard",
+    "Gemeentecode": 1930,
+    "Provincienaam": "Zuid-Holland",
+    "Aantal": 19
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Krimpenerwaard",
+    "Gemeentecode": 1931,
+    "Provincienaam": "Zuid-Holland",
+    "Aantal": 22
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "De Fryske Marren",
+    "Gemeentecode": 1940,
+    "Provincienaam": "Friesland",
+    "Aantal": 11
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Gooise Meren",
+    "Gemeentecode": 1942,
+    "Provincienaam": "Noord-Holland",
+    "Aantal": 10
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Berg en Dal",
+    "Gemeentecode": 1945,
+    "Provincienaam": "Gelderland",
+    "Aantal": 15
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Meierijstad",
+    "Gemeentecode": 1948,
+    "Provincienaam": "Noord-Brabant",
+    "Aantal": 110
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Waadhoeke",
+    "Gemeentecode": 1949,
+    "Provincienaam": "Friesland",
+    "Aantal": 2
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Westerwolde",
+    "Gemeentecode": 1950,
+    "Provincienaam": "Groningen",
+    "Aantal": 4
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Midden-Groningen",
+    "Gemeentecode": 1952,
+    "Provincienaam": "Groningen",
+    "Aantal": 4
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Beekdaelen",
+    "Gemeentecode": 1954,
+    "Provincienaam": "Limburg",
+    "Aantal": 12
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Montferland",
+    "Gemeentecode": 1955,
+    "Provincienaam": "Gelderland",
+    "Aantal": 3
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Altena",
+    "Gemeentecode": 1959,
+    "Provincienaam": "Noord-Brabant",
+    "Aantal": 17
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "West Betuwe",
+    "Gemeentecode": 1960,
+    "Provincienaam": "Gelderland",
+    "Aantal": 12
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Vijfheerenlanden",
+    "Gemeentecode": 1961,
+    "Provincienaam": "Utrecht",
+    "Aantal": 11
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Hoeksche Waard",
+    "Gemeentecode": 1963,
+    "Provincienaam": "Zuid-Holland",
+    "Aantal": 29
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Het Hogeland",
+    "Gemeentecode": 1966,
+    "Provincienaam": "Groningen",
+    "Aantal": 4
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Westerkwartier",
+    "Gemeentecode": 1969,
+    "Provincienaam": "Groningen",
+    "Aantal": 9
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Noardeast-Fryslân",
+    "Gemeentecode": 1970,
+    "Provincienaam": "Friesland",
+    "Aantal": 4
+  },
+  {
+    "Datum": "2020-03-31",
+    "Gemeentenaam": "Molenlanden",
+    "Gemeentecode": 1978,
+    "Provincienaam": "Zuid-Holland",
+    "Aantal": 9
+  }
+]

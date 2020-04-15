@@ -1,6 +1,7 @@
 <script type="text/javascript" src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.1.min.js"></script>
 <link rel="stylesheet" href="/assets/NL_kaart/rangeStyle.css">
 <script type="text/javascript" src="/assets/NL_kaart/NL_map_loadContent.js"></script>
+<script type="text/javascript" src="/assets/NL_kaart/NL_map_legend.js"></script>
 
 <div id="errorAlert"></div>
 
@@ -12,6 +13,8 @@
 	<div class="range-value" id="rangeV"></div>
 	<input class="custom-range" id="country-map-slider" type="range" step="1" >
 </div>
+
+<div id="dataWarning"></div>
 
 <!-- Data representation options -->
 <form class="form-inline">
@@ -36,17 +39,18 @@ const
 	range = document.getElementById('country-map-slider'),
 	rangeV = document.getElementById('rangeV'),
 	setValue = ()=>{
-		var mapDate = (selectedDataset != null) ? new Date(selectedDataset.startDate) : new Date(request_covid19Reports.startDate);
+		if (selectedDataset == null) return;
+		var mapDate = new Date(selectedDataset.startDate);
 		var daysLater = parseInt(range.value);
-		mapDate.setDate(mapDate.getDate() + daysLater);
+		mapDate.setDate(mapDate.getUTCDate() + daysLater);
 		
 		//Don't update the map if the reports are not downloaded yet (when this webpage is loaded).
-		if (request_covid19Reports.data)
+		if (selectedDataset.data)
 			updateMap(mapDate)
 		
 		//Convert the selected date to "dd month"
 		const month = mapDate.toLocaleString('default', { month: 'long' });
-		var dateString = mapDate.getDate().toString() + ' ' + month
+		var dateString = mapDate.getUTCDate().toString() + ' ' + month
 		
 		const
 			newValue = Number( (range.value - range.min) * 100 / (range.max - range.min) ),
