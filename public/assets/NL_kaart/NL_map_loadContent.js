@@ -54,9 +54,9 @@ function covid19Reports_Process(dataSet) {
 	
 	//Place slider label above the holder (at the end).
 	rangeV.style.setProperty("left", "calc(100% + -10px)")
+	
 	//Convert the selected date to "dd month"
-	const month = newestMapDate.toLocaleString('default', { month: 'long' });
-	var dateString = newestMapDate.getDate().toString() + ' ' + month
+	var dateString = getDayAndMonth(newestMapDate)
 	rangeV.innerHTML = '<span id="current-date">' + dateString + '</span>';
 	
 	//Change slide to last day
