@@ -10,7 +10,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from setup import *
 from log_lib import *
-from config import *
+from config_test import *
 import time
 import mysql.connector
 from mysql.connector import errorcode
@@ -49,7 +49,7 @@ else:
         else:
             new_entries+=1
             logging.info('New entry found on timestamp {}'.format(time.time()))
-            if row['Gemeentecode'] != -1:
+            if row['Gemeentecode'] != -1: #Gemeentecode -1 is gebruikt voor gevallen zonder gemeente en hebben NULL waarden bij gemeentenaam en provincie code
                 inser_cursor.execute(insert_new_data_query,(row['Datum'],row['Gemeentenaam'],row['Gemeentecode'],row['Provincienaam'],row['Aantal']))
             else:
                 inser_cursor.execute(insert_new_data_query,(row['Datum'],'NULL',row['Gemeentecode'],'NULL',row['Aantal']))

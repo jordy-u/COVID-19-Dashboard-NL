@@ -63,3 +63,4 @@ else:
     logging.info(info_string.format(end_time,Compaired,New_entries,Updated))
     print(info_string.format(end_time,Compaired,New_entries,Updated))
     cnx.close()
+    
