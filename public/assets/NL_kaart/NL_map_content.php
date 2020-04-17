@@ -2,6 +2,7 @@
 <link rel="stylesheet" href="/assets/NL_kaart/rangeStyle.css">
 <script type="text/javascript" src="/assets/NL_kaart/NL_map_loadContent.js"></script>
 <script type="text/javascript" src="/assets/NL_kaart/NL_map_legend.js"></script>
+<script type="text/javascript" src="/assets/getDateString.js"></script>
 
 <div id="errorAlert"></div>
 
