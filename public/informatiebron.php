@@ -1,4 +1,4 @@
-<?php include_once('assets/config.php'); ?>
+	<?php include_once('assets/config.php'); ?>
 <html>
 <head>
 	<?php include_once('assets/head.php'); ?>
@@ -16,7 +16,10 @@
 		
 		<p>Het doel van deze website is het inzichtelijk maken van de versprijding van het coronavirus. Door dit inzicht hopen we het gedrag van mensen positief te kunnen veranderen.</p>
 		
-		<p>Deze website in een 'work in progress'.</p>
+		<p>Deze website in een 'work in progress'. De source code kan gevonden worden in deze repository:
+		<br>
+		<a href="https://github.com/jordy-u/COVID-19-Dashboard-NL"><button type="button" class="btn btn-dark"><i class="fab fa-github"></i> Source code</button></a>
+		</p>
 
 		<div class="my-3">
 		<a  href="/">Klik hier om terug te keren naar de hoofdpagina</a>
