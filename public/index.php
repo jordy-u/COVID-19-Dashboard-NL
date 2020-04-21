@@ -11,35 +11,14 @@
 <div class="container">
 	<!-- map Netherlands -->
 	<div class="row">
-		<div class="col-lg-8">
+		<div class="col">
 			<?php include('assets/NL_kaart/NL_map_content.php'); ?>
 			<br>
-			<img src="images/placeholders/placeholder_city_stats.png" class="img-fluid">
 		</div>
-		<div class="col-lg-4">
-			<img src="images/placeholders/placeholder_news.png" class="img-fluid">
-		</div>
-	</div>
-	<!-- Stastistics -->
-	<div class="row">
-		<div class="col-md">
-			<img src="images/placeholders/placeholder_graph_spreading.png" class="img-fluid">
-		</div>
-		<div class="col-md">
-			<img src="images/placeholders/placeholder_graph_hospital_avail.png" class="img-fluid">
-		</div>
-	</div>
-	<div class="row">
-		<div class="col-md">
-			<img src="images/placeholders/placeholder_city_map.png" class="img-fluid">
-		</div>
-		<div class="col-md">
-			<img src="images/placeholders/placeholder_city_hospital_avail.png" class="img-fluid">
-		</div>
-	</div>
-<p>
-Dit is een site in aanbouw. Binnenkort is deze site een dashboard waar statistieken te vinden zijn over het coronavirus.<br><br>
 
+	</div>
+
+<p>
 <a href="privacyverklaring">Privacyverklaring</a> | <a href="informatiebron">Informatiebron</a><br><br>
 
 </p>
