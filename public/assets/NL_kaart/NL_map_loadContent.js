@@ -7,7 +7,7 @@ var lastSelectedCity = null;
 //Datasets
 var request_covid19Reports = {
 	data: null,
-	startDate: "2020-02-27T03:00:00+0000",
+	startDate: "2020-02-27T03:00:00.000Z",
 	url: "/assets/NL_kaart/covid19_reports_every_day.json",
 	errorMessage: "Het laden van het aantal covid-19 meldingen is mislukt. Probeer het later nog eens."
 };
@@ -20,7 +20,7 @@ var request_populationPerCity = {
 
 var request_hospitalizationPerCity = {
 	data: null,
-	startDate: "2020-03-31T03:00:00+0000",
+	startDate: "2020-03-31T03:00:00.000Z",
 	url: "/assets/NL_kaart/covid19_hospitalizations.json",
 	errorMessage: "Het laden van aantal ziekenhuisopnamens per gemeente is mislukt. Probeer het later nog eens."
 };
@@ -36,13 +36,13 @@ function covid19Reports_Process(dataSet) {
 	
 	//TODO: This value should not be hardcoded
 	var amountOfDays = 48
-	if (dataSet.startDate == "2020-03-31T03:00:00+0000") amountOfDays = 15;
+	if (dataSet.startDate == "2020-03-31T03:00:00.000Z") amountOfDays = 15;
 	
 	selectedDataset = dataSet;
 	
 	//Determine last day
 	//var newestMapDate = new Date(dataSet.startDate);
-	var newestMapDate = new Date("2020-02-27T05:00:00.000Z");
+	var newestMapDate = new Date("2020-02-27T03:00:00.000Z");
 	newestMapDate.setDate(newestMapDate.getDate() + amountOfDays - 1);
 	
 	//Update the map
@@ -54,9 +54,9 @@ function covid19Reports_Process(dataSet) {
 	
 	//Place slider label above the holder (at the end).
 	rangeV.style.setProperty("left", "calc(100% + -10px)")
+	
 	//Convert the selected date to "dd month"
-	const month = newestMapDate.toLocaleString('default', { month: 'long' });
-	var dateString = newestMapDate.getDate().toString() + ' ' + month
+	var dateString = getDayAndMonth(newestMapDate)
 	rangeV.innerHTML = '<span id="current-date">' + dateString + '</span>';
 	
 	//Change slide to last day
