@@ -9,7 +9,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from setup import *
 from log_lib import *
-from config import *
+from config_test import *
 import time
 import mysql.connector
 from mysql.connector import errorcode

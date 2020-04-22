@@ -7,21 +7,23 @@ Created on Wed Apr 22 12:08:21 2020
 
 
 import pandas as pd
-import matplotlib.pyplot as plt
+#import matplotlib.pyplot as plt
 from setup import *
-from log_lib import *
-from config import *
-import time
+#from log_lib import *
+from config_test import *
+#import time
 import mysql.connector
 from mysql.connector import errorcode
 import logging
-logging.basicConfig(filename='example.log',level=logging.DEBUG)
+from datetime import datetime
+
+logging.basicConfig(filename='log_file.log',level=logging.DEBUG)
 logging.info('Start program')
 
-data = load_pandas(url_path())
 query = ("SELECT Datum, Gemeentecode, Aantal FROM Corona_per_gemeente WHERE Datum =%s AND Gemeentecode =%s")
 insert_new_data_query = ("INSERT INTO `Corona_per_gemeente` (`Datum`, `Gemeentenaam`, `Gemeentecode`, `Provincienaam`, `Aantal`) VALUES (%s, %s, %s, %s, %s)")
-
+select_all_datums_in_database = ("SELECT DISTINCT Datum FROM {} ORDER BY Datum ASC")
+sellect_all_gemeentes_per_date = ("SELECT Gemeentecode, Aantal FROM `Corona_per_gemeente` WHERE Datum ='{}'")
 
 existing_entries = 0
 new_entries = 0
@@ -38,25 +40,27 @@ except mysql.connector.Error as err:
   else:
     logging.warning(err)
 else:
+    """
+    Loading all cusors for the database connection. Since the cursor holds all the data requested from the database.
+    It is ideal to have a cursor per type of operation
+    """
     cursor = cnx.cursor()
     inser_cursor = cnx.cursor()
-    start_time = time.time()
+    check_datum_cursor = cnx.cursor()
+    search_for_datum_cursor = cnx.cursor()
     
-    for index, row in data.iterrows():
-        data_compaired+=1
-        cursor.execute(query, (row['Datum'],row['Gemeentecode']))
-        if cursor.fetchone() != None:
-           existing_entries+=1
-        else:
-            new_entries+=1
-            logging.info('New entry found on timestamp {}'.format(time.time()))
-            if row['Gemeentecode'] != -1:
-                inser_cursor.execute(insert_new_data_query,(row['Datum'],row['Gemeentenaam'],row['Gemeentecode'],row['Provincienaam'],row['Aantal']))
-            else:
-                inser_cursor.execute(insert_new_data_query,(row['Datum'],'NULL',row['Gemeentecode'],'NULL',row['Aantal']))
-            event.new_entry(row['Datum'],row['Gemeentecode'])
+    #all cursors are loaded
+    
+    
+    check_datum_cursor.execute(select_all_datums_in_database.format('Corona_per_gemeente')) #select all Unique datums from the database
+    result = check_datum_cursor.fetchall()
+    for Datum in result:
+        print(Datum[0])
+        search_for_datum_cursor.execute(sellect_all_gemeentes_per_date.format(Datum[0]))
+        for Gemeentecode, Aantal in search_for_datum_cursor:
+            print(Gemeentecode, Aantal)
+        
+   
     cnx.commit()
-    logging.info('operation took {} seconds to complete. Searched trough {} entries, Found {} matching entries and created {} new entries'.format(time.time()-start_time,data_compaired,existing_entries,new_entries))
     cnx.close()
-if new_entries!=0:
     
