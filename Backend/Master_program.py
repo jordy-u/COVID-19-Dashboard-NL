@@ -16,6 +16,7 @@ import mysql.connector
 from mysql.connector import errorcode
 import logging
 from datetime import datetime
+import json
 
 logging.basicConfig(filename='log_file.log',level=logging.DEBUG)
 logging.info('Start program')
@@ -54,13 +55,17 @@ else:
     
     check_datum_cursor.execute(select_all_datums_in_database.format('Corona_per_gemeente')) #select all Unique datums from the database
     result = check_datum_cursor.fetchall()
+    json_output_data = {}
     for Datum in result:
         print(Datum[0])
         search_for_datum_cursor.execute(sellect_all_gemeentes_per_date.format(Datum[0]))
+        temp_data_set ={}
         for Gemeentecode, Aantal in search_for_datum_cursor:
-            print(Gemeentecode, Aantal)
-        
-   
+            temp_data_set['{}'.format(Gemeentecode)] = Aantal
+        json_output_data['{}'.format(Datum[0])] = temp_data_set
+        print(json.dumps(json_output_data))
+        with open('output.json', 'w') as outfile:
+            json.dump(json_output_data, outfile)
     cnx.commit()
     cnx.close()
     
