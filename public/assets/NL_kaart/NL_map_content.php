@@ -1,8 +1,9 @@
 <script type="text/javascript" src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.1.min.js"></script>
 <link rel="stylesheet" href="/assets/NL_kaart/rangeStyle.css">
+<script type="text/javascript" src="/assets/NL_kaart/NL_map_checkValidityOfDatasets.js"></script>
 <script type="text/javascript" src="/assets/NL_kaart/NL_map_loadContent.js"></script>
 <script type="text/javascript" src="/assets/NL_kaart/NL_map_legend.js"></script>
-<script type="text/javascript" src="/assets/getDateString.js"></script>
+<script type="text/javascript" src="/assets/dateFunctions.js"></script>
 
 <div id="errorAlert"></div>
 
@@ -34,31 +35,4 @@
 <br>
 
 <!-- Script to use the slider -->
-<script>
-//https://codepen.io/onyx1812/pen/GRJxmva
-const
-	range = document.getElementById('country-map-slider'),
-	rangeV = document.getElementById('rangeV'),
-	setValue = ()=>{
-		if (selectedDataset == null) return;
-		var mapDate = new Date(selectedDataset.startDate);
-		var daysLater = parseInt(range.value);
-		mapDate.setDate(mapDate.getUTCDate() + daysLater);
-		
-		//Don't update the map if the reports are not downloaded yet (when this webpage is loaded).
-		if (selectedDataset.data)
-			updateMap(mapDate)
-		
-		//Convert the selected date to "dd month"
-		const month = mapDate.toLocaleString('default', { month: 'long' });
-		var dateString = mapDate.getUTCDate().toString() + ' ' + month
-		
-		const
-			newValue = Number( (range.value - range.min) * 100 / (range.max - range.min) ),
-			newPosition = 10 - (newValue * 0.2);
-		rangeV.innerHTML = `<span id="current-date">${dateString}</span>`;
-		rangeV.style.left = `calc(${newValue}% + (${newPosition}px))`;
-	};
-document.addEventListener("DOMContentLoaded", setValue);
-range.addEventListener('input', setValue);
-</script>
+<script type="text/javascript" src="/assets/NL_kaart/NL_map_slider.js"></script>

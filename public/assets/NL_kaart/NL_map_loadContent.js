@@ -7,7 +7,8 @@ var lastSelectedCity = null;
 //Datasets
 var request_covid19Reports = {
 	data: null,
-	startDate: "2020-02-27T03:00:00.000Z",
+	startDate : null,
+	endDate : null,
 	url: "/assets/NL_kaart/covid19_reports_every_day.json",
 	errorMessage: "Het laden van het aantal covid-19 meldingen is mislukt. Probeer het later nog eens."
 };
@@ -20,7 +21,8 @@ var request_populationPerCity = {
 
 var request_hospitalizationPerCity = {
 	data: null,
-	startDate: "2020-03-31T03:00:00.000Z",
+	startDate : null,
+	endDate : null,
 	url: "/assets/NL_kaart/covid19_hospitalizations.json",
 	errorMessage: "Het laden van aantal ziekenhuisopnamens per gemeente is mislukt. Probeer het later nog eens."
 };
@@ -33,30 +35,23 @@ var request_cityNames = {
 
 //Fill the map with data of today.
 function covid19Reports_Process(dataSet) {
-	
-	//TODO: This value should not be hardcoded
-	var amountOfDays = 48
-	if (dataSet.startDate == "2020-03-31T03:00:00.000Z") amountOfDays = 15;
-	
+	var amountOfDays = dateDiffInDays(dataSet.startDate, dataSet.endDate);
 	selectedDataset = dataSet;
 	
-	//Determine last day
-	//var newestMapDate = new Date(dataSet.startDate);
-	var newestMapDate = new Date("2020-02-27T03:00:00.000Z");
-	newestMapDate.setDate(newestMapDate.getDate() + amountOfDays - 1);
-	
 	//Update the map
-	updateMap(newestMapDate);
+	updateMap(dataSet.endDate);
 	
 	//Set max value of slider
-	$("#country-map-slider")[0].setAttribute("max", amountOfDays-1)
-	$("#country-map-slider")[0].setAttribute("value", amountOfDays-1)
+	$("#country-map-slider")[0].setAttribute("max", amountOfDays)
+	$("#country-map-slider")[0].setAttribute("value", amountOfDays)
 	
 	//Place slider label above the holder (at the end).
 	rangeV.style.setProperty("left", "calc(100% + -10px)")
 	
 	//Convert the selected date to "dd month"
-	var dateString = getDayAndMonth(newestMapDate)
+	var dateString = getDayAndMonth(dataSet.endDate)
+	console.log("dataSet.endDate: " + dataSet.endDate)
+	console.log("dateString: " + dateString)
 	rangeV.innerHTML = '<span id="current-date">' + dateString + '</span>';
 	
 	//Change slide to last day
@@ -189,8 +184,10 @@ function dataLoading_onreadystatechange(this_request, request_parameters) {
 			
 			// Check if both files are loaded
 			dataLoading_numberOfFilesLoaded++;
-			if (dataLoading_numberOfFilesLoaded == 4)
-				covid19Reports_Process(request_covid19Reports); 
+			if (dataLoading_numberOfFilesLoaded == 4) {
+				if (checkAllDataFiles())
+					covid19Reports_Process(request_covid19Reports); 
+			}
 		}
 		//Request is NOT OK
 		if (this_request.status != 200) {
@@ -198,4 +195,3 @@ function dataLoading_onreadystatechange(this_request, request_parameters) {
 		}
 	}
 }
-
