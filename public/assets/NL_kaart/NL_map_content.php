@@ -3,7 +3,7 @@
 <script type="text/javascript" src="/assets/NL_kaart/NL_map_checkValidityOfDatasets.js"></script>
 <script type="text/javascript" src="/assets/NL_kaart/NL_map_loadContent.js"></script>
 <script type="text/javascript" src="/assets/NL_kaart/NL_map_legend.js"></script>
-<script type="text/javascript" src="/assets/getDateString.js"></script>
+<script type="text/javascript" src="/assets/dateFunctions.js"></script>
 
 <div id="errorAlert"></div>
 

@@ -22,7 +22,6 @@ function getMonthName(date) {
 
 //Returns date as "dd month"
 function getDayAndMonth(date) {
-	console.log("date: " + date)
 	return date.getUTCDate() + " " + getMonthName(date);
 }
 
