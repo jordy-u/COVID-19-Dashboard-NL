@@ -1,5 +1,6 @@
 <script type="text/javascript" src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.1.min.js"></script>
 <link rel="stylesheet" href="/assets/NL_kaart/rangeStyle.css">
+<script type="text/javascript" src="/assets/NL_kaart/NL_map_checkValidityOfDatasets.js"></script>
 <script type="text/javascript" src="/assets/NL_kaart/NL_map_loadContent.js"></script>
 <script type="text/javascript" src="/assets/NL_kaart/NL_map_legend.js"></script>
 <script type="text/javascript" src="/assets/getDateString.js"></script>
@@ -41,17 +42,17 @@ const
 	rangeV = document.getElementById('rangeV'),
 	setValue = ()=>{
 		if (selectedDataset == null) return;
-		var mapDate = new Date(selectedDataset.startDate);
+		//var mapDate = new Date(selectedDataset.startDate);
 		var daysLater = parseInt(range.value);
-		mapDate.setDate(mapDate.getUTCDate() + daysLater);
+		
+		var mapDate = addDaysToDate(selectedDataset.startDate, daysLater);
 		
 		//Don't update the map if the reports are not downloaded yet (when this webpage is loaded).
 		if (selectedDataset.data)
 			updateMap(mapDate)
 		
 		//Convert the selected date to "dd month"
-		const month = mapDate.toLocaleString('default', { month: 'long' });
-		var dateString = mapDate.getUTCDate().toString() + ' ' + month
+		var dateString = getDayAndMonth(mapDate)
 		
 		const
 			newValue = Number( (range.value - range.min) * 100 / (range.max - range.min) ),
