@@ -49,19 +49,14 @@ else:
     cursor = cnx.cursor()
     inser_cursor = cnx.cursor()
     check_datum_cursor = cnx.cursor()
-    search_for_datum_cursor = cnx.cursor()
+
     
     #all cursors are loaded
     
     
     check_datum_cursor.execute(select_all_datums_in_database.format('Corona_per_gemeente')) #select all Unique datums from the database
     result = check_datum_cursor.fetchall()
-    json_output_data = {}
-    for Datum in result:
-        print(Datum[0])
-        search_for_datum_cursor.execute(sellect_all_gemeentes_per_date.format(Datum[0]))
-        json_output_data=structure_for_date(Datum[0],json_output_data,search_for_datum_cursor)
-        print(json.dumps(json_output_data))
+    json_output_data = structure_array('Corona_per_gemeente',result, cnx)
     save_JSON(json_output_data,"covid19_reports_every_day")
     cnx.commit()
     cnx.close()
