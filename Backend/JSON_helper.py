@@ -32,14 +32,18 @@ def structure_for_date(Date, Target, Source):
 """
 _/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/
 
-Name: 
+Name: save_JSON
 
-Purpose: 
+Purpose: save a given structured array as JSON file to the drive
 
-Expected input: 
+Expected input: Target Array as array, file name as string, possible alternative location as string
 
-Expected output: 
+Expected output: File saved file in /outputs/[filename].json
     
-Dependancies:
+Dependancies: json library
 """
-
+import json
+def save_JSON(target, filename="output", location = "../outputs/"):
+    with open('{}{}.json'.format(location,filename), 'w') as outfile:
+            json.dump(target, outfile)
+    

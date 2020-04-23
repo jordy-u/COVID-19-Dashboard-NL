@@ -17,6 +17,7 @@ from mysql.connector import errorcode
 import logging
 from datetime import datetime
 import json
+from JSON_helper import *
 
 logging.basicConfig(filename='log_file.log',level=logging.DEBUG)
 logging.info('Start program')
@@ -59,13 +60,9 @@ else:
     for Datum in result:
         print(Datum[0])
         search_for_datum_cursor.execute(sellect_all_gemeentes_per_date.format(Datum[0]))
-        temp_data_set ={}
-        for Gemeentecode, Aantal in search_for_datum_cursor:
-            temp_data_set['{}'.format(Gemeentecode)] = Aantal
-        json_output_data['{}'.format(Datum[0])] = temp_data_set
+        json_output_data=structure_for_date(Datum[0],json_output_data,search_for_datum_cursor)
         print(json.dumps(json_output_data))
-        with open('output.json', 'w') as outfile:
-            json.dump(json_output_data, outfile)
+    save_JSON(json_output_data,"covid19_reports_every_day")
     cnx.commit()
     cnx.close()
     
