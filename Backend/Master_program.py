@@ -7,17 +7,14 @@ Created on Wed Apr 22 12:08:21 2020
 
 
 import pandas as pd
-#import matplotlib.pyplot as plt
 from setup import *
-#from log_lib import *
 from config_test import *
-#import time
 import mysql.connector
 from mysql.connector import errorcode
 import logging
-from datetime import datetime
 import json
 from JSON_helper import *
+from SQL_helper import *
 
 logging.basicConfig(filename='log_file.log',level=logging.DEBUG)
 logging.info('Start program')
@@ -28,7 +25,7 @@ table_list = [
              ]
 
 query = ("SELECT Datum, Gemeentecode, Aantal FROM Corona_per_gemeente WHERE Datum =%s AND Gemeentecode =%s")
-insert_new_data_query = ("INSERT INTO `Corona_per_gemeente` (`Datum`, `Gemeentenaam`, `Gemeentecode`, `Provincienaam`, `Aantal`) VALUES (%s, %s, %s, %s, %s)")
+
 
 
 existing_entries = 0
@@ -48,8 +45,21 @@ except mysql.connector.Error as err:
 else:
     cursor = cnx.cursor()
     #all cursors are loaded
+    inser_cursor = cnx.cursor()
+    start_time = time.time()
     
-    create_json(table_list[0][0],table_list[0][1],cnx)
+    for index, row in data.iterrows():
+        data_compaired+=1
+        cursor.execute(query, (row['Datum'],row['Gemeentecode']))
+        if cursor.fetchone() != None:
+           existing_entries+=1
+        else:
+            insert_new_entry()
+            new_entries+=1
+            logging.info('New entry found on timestamp {}'.format(time.time()))
+            
+    if new_entries != 0:
+        create_json(table_list[0][0],table_list[0][1],cnx)
     
     cnx.commit()
     cnx.close()

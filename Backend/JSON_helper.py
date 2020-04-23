@@ -2,7 +2,7 @@
 """
 Created on Thu Apr 23 15:09:11 2020
 
-@author: User
+@author: Laurens roos
 """
 
 
