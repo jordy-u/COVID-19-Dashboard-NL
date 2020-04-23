@@ -22,7 +22,10 @@ from JSON_helper import *
 logging.basicConfig(filename='log_file.log',level=logging.DEBUG)
 logging.info('Start program')
 
-table_list = [['Corona_per_gemeente','covid19_reports_every_day']]
+table_list = [   
+    ['Corona_per_gemeente','covid19_reports_every_day','https://raw.githubusercontent.com/J535D165/CoronaWatchNL/master/data/rivm_corona_in_nl'],
+    ['ziekenhuis_opname_per_gemeente','covid19_hospitalizations','']
+             ]
 
 query = ("SELECT Datum, Gemeentecode, Aantal FROM Corona_per_gemeente WHERE Datum =%s AND Gemeentecode =%s")
 insert_new_data_query = ("INSERT INTO `Corona_per_gemeente` (`Datum`, `Gemeentenaam`, `Gemeentecode`, `Provincienaam`, `Aantal`) VALUES (%s, %s, %s, %s, %s)")
