@@ -70,3 +70,21 @@ def structure_array(table_name, source, cnx):
         search_for_datum_cursor.execute(sellect_all_gemeentes_per_date.format(table_name,Datum[0]))
         json_output_data=structure_for_date(Datum[0],json_output_data,search_for_datum_cursor)
     return json_output_data
+"""
+_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/
+
+Name: get_date
+
+Purpose: to get all unique dates from a database
+
+Expected input: table name as string , object for mysql helper to initialize the cursor
+
+Expected output: sql array
+    
+Dependancies: mysql connect
+"""
+def get_date(table_name, cnx):
+    select_all_datums_in_database = ("SELECT DISTINCT Datum FROM {} ORDER BY Datum ASC")
+    check_datum_cursor = cnx.cursor()
+    check_datum_cursor.execute(select_all_datums_in_database.format(table_name)) #select all Unique datums from the database
+    return check_datum_cursor.fetchall()

@@ -24,8 +24,6 @@ logging.info('Start program')
 
 query = ("SELECT Datum, Gemeentecode, Aantal FROM Corona_per_gemeente WHERE Datum =%s AND Gemeentecode =%s")
 insert_new_data_query = ("INSERT INTO `Corona_per_gemeente` (`Datum`, `Gemeentenaam`, `Gemeentecode`, `Provincienaam`, `Aantal`) VALUES (%s, %s, %s, %s, %s)")
-select_all_datums_in_database = ("SELECT DISTINCT Datum FROM {} ORDER BY Datum ASC")
-sellect_all_gemeentes_per_date = ("SELECT Gemeentecode, Aantal FROM `Corona_per_gemeente` WHERE Datum ='{}'")
 
 existing_entries = 0
 new_entries = 0
@@ -47,17 +45,14 @@ else:
     It is ideal to have a cursor per type of operation
     """
     cursor = cnx.cursor()
-    inser_cursor = cnx.cursor()
-    check_datum_cursor = cnx.cursor()
 
-    
     #all cursors are loaded
     
     
-    check_datum_cursor.execute(select_all_datums_in_database.format('Corona_per_gemeente')) #select all Unique datums from the database
-    result = check_datum_cursor.fetchall()
+    result = get_date('Corona_per_gemeente', cnx)
     json_output_data = structure_array('Corona_per_gemeente',result, cnx)
     save_JSON(json_output_data,"covid19_reports_every_day")
+    
     cnx.commit()
     cnx.close()
     
