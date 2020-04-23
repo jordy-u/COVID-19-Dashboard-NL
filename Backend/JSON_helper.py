@@ -88,3 +88,20 @@ def get_date(table_name, cnx):
     check_datum_cursor = cnx.cursor()
     check_datum_cursor.execute(select_all_datums_in_database.format(table_name)) #select all Unique datums from the database
     return check_datum_cursor.fetchall()
+"""
+_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/
+
+Name: create_json
+
+Purpose: phrase an JSON file from a table name
+
+Expected input: table name as string, json storagename as string , object for mysql helper to initialize the cursor
+
+Expected output: sql array
+    
+Dependancies: mysql connect and json
+"""
+def create_json(table_name,filename ,cnx):
+    result = get_date(table_name, cnx)
+    json_output_data = structure_array(table_name,result, cnx)
+    save_JSON(json_output_data,filename)

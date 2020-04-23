@@ -22,8 +22,11 @@ from JSON_helper import *
 logging.basicConfig(filename='log_file.log',level=logging.DEBUG)
 logging.info('Start program')
 
+table_list = [['Corona_per_gemeente','covid19_reports_every_day']]
+
 query = ("SELECT Datum, Gemeentecode, Aantal FROM Corona_per_gemeente WHERE Datum =%s AND Gemeentecode =%s")
 insert_new_data_query = ("INSERT INTO `Corona_per_gemeente` (`Datum`, `Gemeentenaam`, `Gemeentecode`, `Provincienaam`, `Aantal`) VALUES (%s, %s, %s, %s, %s)")
+
 
 existing_entries = 0
 new_entries = 0
@@ -40,18 +43,10 @@ except mysql.connector.Error as err:
   else:
     logging.warning(err)
 else:
-    """
-    Loading all cusors for the database connection. Since the cursor holds all the data requested from the database.
-    It is ideal to have a cursor per type of operation
-    """
     cursor = cnx.cursor()
-
     #all cursors are loaded
     
-    
-    result = get_date('Corona_per_gemeente', cnx)
-    json_output_data = structure_array('Corona_per_gemeente',result, cnx)
-    save_JSON(json_output_data,"covid19_reports_every_day")
+    create_json(table_list[0][0],table_list[0][1],cnx)
     
     cnx.commit()
     cnx.close()
