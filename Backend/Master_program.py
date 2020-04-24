@@ -20,7 +20,7 @@ logging.basicConfig(filename='log_file.log',level=logging.DEBUG)
 logging.info('Start program')
 
 table_list = [   
-    ['Corona_per_gemeente','covid19_reports_every_day','https://raw.githubusercontent.com/J535D165/CoronaWatchNL/master/data/rivm_corona_in_nl'],
+    ['corona_per_gemeente','covid19_reports_every_day','https://raw.githubusercontent.com/J535D165/CoronaWatchNL/master/data/rivm_corona_in_nl'],
     ['ziekenhuis_opname_per_gemeente','covid19_hospitalizations','']
              ]
 
@@ -46,8 +46,7 @@ else:
     cursor = cnx.cursor()
     #all cursors are loaded
     inser_cursor = cnx.cursor()
-    start_time = time.time()
-    
+    #start_time = time.time()
     for index, row in data.iterrows():
         data_compaired+=1
         cursor.execute(query, (row['Datum'],row['Gemeentecode']))
