@@ -15,6 +15,7 @@ import logging
 import json
 from JSON_helper import *
 from SQL_helper import *
+from CSV_helper import *
 
 logging.basicConfig(filename='log_file.log',level=logging.DEBUG)
 logging.info('Start program')
@@ -49,9 +50,14 @@ else:
         if does_table_exist(packet[0], cnx) != True:
             create_new_table_for_gemeente(packet[0], cnx)
             logging.info("No table found with entry for {}. Table is generated".format(packet[0]))
-            
-    if new_entries != 0:
-        create_json(table_list[0][0],table_list[0][1],cnx)
+        for index, row in get_CSV_data(packet[2]):
+             data_compaired+=1
+             if does_entry_exist(packet[0],row['Datum'],row['Gemeentecode'],cnx) != True:
+                 insert_new_entry(packet[0],row['Datum'], row['Gemeentecode'], row['aantal'], cnx)
+                 new_entries+=1
+        
+        if new_entries != 0:
+            create_json(packet[0],packet[1],cnx)
     
     cnx.commit()
     cnx.close()
