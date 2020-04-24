@@ -45,4 +45,26 @@ def does_table_exist(table_name, cnx):
     search_cursor = cnx.cursor()
     search_cursor.execute(search_query.format(table_name))
     return search_cursor.fetchone() != None
+
+"""
+_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/
+
+Name: create_new_table_for_gemeente
+
+Purpose: create a new table for the aantalen per gemeente with the correct structure
+
+Expected input: table name as string, mysql object for cursor
+
+Expected output: mysql generated table in the database
+
+Dependancies: mysql connect
+
+"""
+def create_new_table_for_gemeente(table_name, cnx):
+    creation_query = ("CREATE TABLE `{}` ( `ID` INT NOT NULL AUTO_INCREMENT , `Datum` DATE NOT NULL , `Gemeentecode` INT NOT NULL , `Aantal` INT NOT NULL , PRIMARY KEY (`ID`)) ENGINE = InnoDB")
+    creation_cursor = cnx.cursor()
+    creation_cursor.execute(creation_query.format(table_name))
     
+
+
+  
