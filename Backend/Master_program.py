@@ -50,10 +50,10 @@ else:
         if does_table_exist(packet[0], cnx) != True:
             create_new_table_for_gemeente(packet[0], cnx)
             logging.info("No table found with entry for {}. Table is generated".format(packet[0]))
-        for index, row in get_CSV_data(packet[2]):
+        for index, row in get_CSV_data(packet[2]).iterrows():
              data_compaired+=1
              if does_entry_exist(packet[0],row['Datum'],row['Gemeentecode'],cnx) != True:
-                 insert_new_entry(packet[0],row['Datum'], row['Gemeentecode'], row['aantal'], cnx)
+                 insert_new_entry(packet[0],row['Datum'], row['Gemeentecode'], row['Aantal'], cnx)
                  new_entries+=1
         
         if new_entries != 0:

@@ -21,9 +21,9 @@ Dependancies: mysql connect, log_lib
 """
 from log_lib import event
 def insert_new_entry(table_name, datum, gemeentecode, aantal, cnx):
-    insert_new_data_query = ("INSERT INTO `%s` (`Datum`, `Gemeentecode`, `Aantal`) VALUES (%s, %s, %s)")
+    insert_new_data_query = ("INSERT INTO {} (`Datum`, `Gemeentecode`, `Aantal`) VALUES ('{}', '{}', '{}')")
     inser_cursor = cnx.cursor()
-    inser_cursor.execute(insert_new_data_query,(table_name, datum, gemeentecode,aantal))
+    inser_cursor.execute(insert_new_data_query.format(table_name, datum, gemeentecode,aantal))
     event.new_entry(datum,gemeentecode)
     
 """
@@ -61,7 +61,7 @@ Dependancies: mysql connect
 
 """
 def create_new_table_for_gemeente(table_name, cnx):
-    creation_query = ("CREATE TABLE `{}` ( `ID` INT NOT NULL AUTO_INCREMENT , `Datum` DATE NOT NULL , `Gemeentecode` INT NOT NULL , `Aantal` INT NOT NULL , PRIMARY KEY (`ID`)) ENGINE = InnoDB")
+    creation_query = ("CREATE TABLE {} ( `ID` INT NOT NULL AUTO_INCREMENT , `Datum` DATE NOT NULL , `Gemeentecode` INT NOT NULL , `Aantal` INT NOT NULL , PRIMARY KEY (`ID`)) ENGINE = InnoDB")
     creation_cursor = cnx.cursor()
     creation_cursor.execute(creation_query.format(table_name))
     

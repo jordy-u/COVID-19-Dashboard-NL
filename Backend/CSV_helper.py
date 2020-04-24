@@ -22,9 +22,11 @@ Dependancies: Pandas logging
 """
 import pandas as pd
 import logging
+
 def get_CSV_data(file_loc = '-1'):
     if file_loc != -1:
         data = pd.read_csv("{}.csv".format(file_loc))
+        logging.info("CSV loaded")
         return(data)
     else:
         logging.info("no file path fiven")
