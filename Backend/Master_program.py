@@ -8,7 +8,7 @@ Created on Wed Apr 22 12:08:21 2020
 
 import pandas as pd
 from setup import *
-from config_test import *
+from config import *
 import mysql.connector
 from mysql.connector import errorcode
 import logging
@@ -47,16 +47,17 @@ else:
     inser_cursor = cnx.cursor()
     #start_time = time.time()
     for packet in table_list:
-        if does_table_exist(packet[0], cnx) != True:
+
+        if does_table_exist(packet[0], cnx) != True: #making sure that the table already exists
             create_new_table_for_gemeente(packet[0], cnx)
             logging.info("No table found with entry for {}. Table is generated".format(packet[0]))
-        for index, row in get_CSV_data(packet[2]).iterrows():
+        for index, row in get_CSV_data(packet[2]).iterrows(): #from the CSV source, get all the info and split them into rows.
              data_compaired+=1
-             if does_entry_exist(packet[0],row['Datum'],row['Gemeentecode'],cnx) != True:
+             if does_entry_exist(packet[0],row['Datum'],row['Gemeentecode'],cnx) != True: #check if the entry already exists or not
                  insert_new_entry(packet[0],row['Datum'], row['Gemeentecode'], row['Aantal'], cnx)
                  new_entries+=1
         
-        if new_entries != 0:
+        if new_entries != 0: #only if new entries have been added, generate a new JSON
             create_json(packet[0],packet[1],cnx)
     
     cnx.commit()
