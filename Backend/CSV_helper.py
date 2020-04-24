@@ -9,14 +9,22 @@ Created on Fri Apr 24 12:31:38 2020
 """
 _/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/
 
-Name: 
+Name: get_CSV_data
 
-Purpose: 
+Purpose: getting and returning the data from the file path 
 
-Expected input: 
+Expected input: file path as string 
 
-Expected output: 
+Expected output: CSV data as pandas array
 
-Dependancies: 
+Dependancies: Pandas logging
 
 """
+import pandas as pd
+import logging
+def get_CSV_data(file_loc = '-1'):
+    if file_loc != -1:
+        data = pd.read_csv("{}.csv".format(file_loc))
+        return(data)
+    else:
+        logging.info("no file path fiven")

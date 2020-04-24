@@ -24,8 +24,6 @@ table_list = [
     ['ziekenhuis_opname_per_gemeente_totaal','covid19_hospitalizations','https://raw.githubusercontent.com/J535D165/CoronaWatchNL/master/data/rivm_NL_covid19_hosp_municipality']
              ]
 
-query = ("SELECT Datum, Gemeentecode, Aantal FROM Corona_per_gemeente WHERE Datum =%s AND Gemeentecode =%s")
-
 
 
 existing_entries = 0
@@ -50,7 +48,8 @@ else:
     for packet in table_list:
         if does_table_exist(packet[0], cnx) != True:
             create_new_table_for_gemeente(packet[0], cnx)
-            logging.info("No table found with entry. Table is generated")
+            logging.info("No table found with entry for {}. Table is generated".format(packet[0]))
+            
     if new_entries != 0:
         create_json(table_list[0][0],table_list[0][1],cnx)
     
