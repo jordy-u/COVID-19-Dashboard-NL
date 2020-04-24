@@ -65,6 +65,24 @@ def create_new_table_for_gemeente(table_name, cnx):
     creation_cursor = cnx.cursor()
     creation_cursor.execute(creation_query.format(table_name))
     
+"""
+_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/
 
+Name: does_entry_exist
 
+Purpose: check if the entry already exists
+
+Expected input: table name as string, datum as datetime.date, gemeentecode as string, mysql object for cursor
+
+Expected output: boolean if the entry exists
+
+Dependancies: mysql connect
+
+"""
+def does_entry_exist(table_name,date,gemeentecode,cnx):
+    search_query = ("SELECT Datum, Gemeentecode, Aantal FROM {} WHERE Datum ='{}' AND Gemeentecode ='{}'")
+    search_cursor = cnx.cursor()
+    search_cursor.execute(search_query.format(table_name, date, gemeentecode))
+    return search_cursor.fetchone() != None
+    
   
