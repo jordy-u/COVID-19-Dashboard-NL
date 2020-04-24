@@ -12,14 +12,14 @@ Data used for this site comes from the RIVM. The RIVM updates her website on a d
 ## Repository structure
 The most important folders are:
 
-## public
+### public
 This folder is accessible on the webserver.
 
-## Backend
+### Backend
 This folder has programs to automatise tasks. There programs will run on the server when neccercary.
 
-## tools
+### tools
 This folder contains scripts which are for one-time use, like CSV to JSON conversion scrips. There are save here, because they can come in handy during development.
 
-## Tests
+### Tests
 In this folder tests are stored to check the functionality of your server.
