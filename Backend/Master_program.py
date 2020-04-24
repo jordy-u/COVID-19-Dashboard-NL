@@ -20,6 +20,7 @@ from CSV_helper import *
 logging.basicConfig(filename='log_file.log',level=logging.DEBUG)
 logging.info('Start program')
 
+# list with tabels as source. following the syntax: Table name, JSON name, SOURCE CSV
 table_list = [   
     ['corona_per_gemeente_totaal','covid19_reports_every_day','https://raw.githubusercontent.com/J535D165/CoronaWatchNL/master/data/rivm_NL_covid19_total_municipality'],
     ['ziekenhuis_opname_per_gemeente_totaal','covid19_hospitalizations','https://raw.githubusercontent.com/J535D165/CoronaWatchNL/master/data/rivm_NL_covid19_hosp_municipality']
