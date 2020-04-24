@@ -20,8 +20,8 @@ logging.basicConfig(filename='log_file.log',level=logging.DEBUG)
 logging.info('Start program')
 
 table_list = [   
-    ['corona_per_gemeente','covid19_reports_every_day','https://raw.githubusercontent.com/J535D165/CoronaWatchNL/master/data/rivm_corona_in_nl'],
-    ['ziekenhuis_opname_per_gemeente','covid19_hospitalizations','']
+    ['corona_per_gemeente_totaal','covid19_reports_every_day','https://raw.githubusercontent.com/J535D165/CoronaWatchNL/master/data/rivm_NL_covid19_total_municipality'],
+    ['ziekenhuis_opname_per_gemeente_totaal','covid19_hospitalizations','https://raw.githubusercontent.com/J535D165/CoronaWatchNL/master/data/rivm_NL_covid19_hosp_municipality']
              ]
 
 query = ("SELECT Datum, Gemeentecode, Aantal FROM Corona_per_gemeente WHERE Datum =%s AND Gemeentecode =%s")
@@ -47,16 +47,10 @@ else:
     #all cursors are loaded
     inser_cursor = cnx.cursor()
     #start_time = time.time()
-    for index, row in data.iterrows():
-        data_compaired+=1
-        cursor.execute(query, (row['Datum'],row['Gemeentecode']))
-        if cursor.fetchone() != None:
-           existing_entries+=1
-        else:
-            insert_new_entry()
-            new_entries+=1
-            logging.info('New entry found on timestamp {}'.format(time.time()))
-            
+    for packet in table_list:
+        if does_table_exist(packet[0], cnx) != True:
+            create_new_table_for_gemeente(packet[0], cnx)
+            logging.info("No table found with entry. Table is generated")
     if new_entries != 0:
         create_json(table_list[0][0],table_list[0][1],cnx)
     
