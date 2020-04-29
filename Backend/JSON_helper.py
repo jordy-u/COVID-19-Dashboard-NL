@@ -101,7 +101,7 @@ Expected output: sql array
     
 Dependancies: mysql connect and json
 """
-def create_json(table_name,filename ,cnx):
+def create_json(table_name,filename ,cnx , location = '../outputs/'):
     result = get_date(table_name, cnx)
     json_output_data = structure_array(table_name,result, cnx)
-    save_JSON(json_output_data,filename)
+    save_JSON(json_output_data,filename, location)
