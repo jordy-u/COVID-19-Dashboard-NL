@@ -59,7 +59,7 @@ else:
                  new_entries+=1
         
         if new_entries != 0: #only if new entries have been added, generate a new JSON
-            logging.info("{} Entries found, updating JSON")
+            logging.info("{} Entries found, updating JSON".format(new_entries))
             create_json(packet[0],packet[1],cnx, '../public/assets/NL_kaart/')
         else :
             logging.info("no new entries found, Exit program without JSON updates.")
