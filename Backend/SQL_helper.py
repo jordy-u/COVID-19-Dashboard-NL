@@ -24,6 +24,7 @@ def insert_new_entry(table_name, datum, gemeentecode, aantal, cnx):
     insert_new_data_query = ("INSERT INTO {} (`Datum`, `Gemeentecode`, `Aantal`) VALUES ('{}', '{}', '{}')")
     inser_cursor = cnx.cursor()
     inser_cursor.execute(insert_new_data_query.format(table_name, datum, gemeentecode,aantal))
+    cnx.commit()
     event.new_entry(datum,gemeentecode)
     
 """
